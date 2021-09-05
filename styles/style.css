@@ -1,153 +1,92 @@
-/* Applies to the entire body of the HTML document (except where overridden by more specific
-selectors). */
-
-
-/* Global Styles */
-
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: whitesmoke;
-  font-family: 'Fira Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* NAVBAR */
-
-.navbar,
-.right-nav-container,
-.left-nav-container {
+body header nav {
+  background-color: #e5ebd5;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 1px 1px grey;
+          box-shadow: 0px 1px 1px grey;
 }
 
-.navbar {
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
-  height: 80px;
-  margin-bottom: 20px;
+body header nav div img {
+  width: 30px;
+  padding: 0 10px;
 }
 
-.left-nav-container {
-  justify-content: center;
-  align-items: center;
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.right-nav-container li {
-  margin: 0 30px 0 50px;
-  font-size: 20px;
-  list-style-type: none;
+body header nav ul li {
+  list-style: none;
+  padding: 10px 30px;
+  text-transform: uppercase;
 }
 
-.right-nav-container {
-  padding-right: 30px;
-}
-
-.link {
+body header nav ul li a {
   text-decoration: none;
-  font-weight: 600;
 }
 
-.blog_logo {
-  height: 60px;
-  width: 60px;
-  margin-left: 30px;
+body .icon-image {
+  width: 20px;
+  height: 20px;
 }
 
-.blog-title {
-  margin-left: 30px;
-  font-size: 50px;
-  font-weight: 900;
-}
-
-/* MAIN */
-
-/* Top Container */
-
-.top-container {
+body main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px;
+  -webkit-box-shadow: 0px 1px 1px grey;
+          box-shadow: 0px 1px 1px grey;
 }
 
-.top-container-image {
-  width:50%;
-  box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.32);
-  margin: 0 70px;
-}
-
-.top-container-text {
-  font-size: 50px;
-  font-weight: 900;
+body main section div {
   text-align: center;
-  padding: 0 20px
 }
 
-.top-container-text-span {
-  font-weight: 500;
+body main section div img {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
 }
 
-/* 
-.nav-bar,
-.left-nav-container,
-.right-nav-container {
-  display: flex;
-  flex-direction: ;
-}
-
-.nav-bar {
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.left-nav-container,
-.right-nav-container { 
-  flex-direction: row;
-}
-
-
-
-
-
-h1 {
-  font-size: 35px;
-  font-weight: normal;
-  margin-top: 30px;
-  font-stretch: expanded;
-  background: -webkit-linear-gradient(rgb(120, 128, 146), black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.blog_image {
-  width: 100%;
-  box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.72);
-}
-
-p{
-  line-height: 2em;
-}
-
-
-.active{
-  background-color: rgb(82, 76, 175);
-  color: white;
-}
-
-.toggle-me {
-  height: 30px;
-  width: 200px;
+body main section div button {
   border: none;
-  border-radius: 7px;
-  box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.72);
-  opacity: 0.8;
+  color: whitesmoke;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #089708;
 }
-
-nav {
-  font-size: 20px;
-  padding: 20px 40px
-} */
+/*# sourceMappingURL=style.css.map */
