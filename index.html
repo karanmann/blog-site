@@ -13,8 +13,7 @@
     <header id="home">
       <nav>
         <div class="nav-logo">
-          <img src="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg" alt="">
-          <p>FOODEX</p>
+          <p><img src="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg" alt="">FOODEX</p>
         </div>
         <ul class="nav-navlink-site">
           <li><a href="#home" rel="noopener noreferrer">Home</a></li>
@@ -46,10 +45,10 @@
         </div>
       </section>
 
-      <section id="dishes" class="popular-dishes-container">
+      <section class="flex-center-column" id="dishes" class="popular-dishes-container">
         <h4>Our Dishes</h4>
         <h2>POPULAR DISHES</h2>
-        <div class="card-container-popular-dishes">
+        <div class="card-container-popular-dishes flex-center-row">
           <div class="card-popular-dishes">
             <div class="card-icons-container">
               <img src="./assets/icons/dont-watch.svg" alt="watch-icon">
@@ -156,7 +155,7 @@
         </div> 
       </section>
 
-      <section id="aboutus" class="popular-dishes-container"> 
+      <section id="aboutus" class="popular-dishes-container flex-center-column" > 
         <h4>About Us</h4>
         <h2>WHY CHOOSE US?</h2>
         <div>
@@ -183,10 +182,10 @@
         </div>
       </section>
 
-      <section id="menu">
+      <section id="menu" class="flex-center-column">
         <h4>Our Menu</h4>
         <h2>TODAYS SPECIAL</h2>
-        <div class="cards-container-todays-special">
+        <div class="cards-container-todays-special flex-center-row">
           <div class="card-todays-special">
             <div class="card-icons-container">
               <img src="./assets/icons/heart-outline.svg" alt="heart-icon">
@@ -293,11 +292,11 @@
         </div>
       </section>
 
-      <section id="review">
+      <section id="review" class="flex-center-column">
         <h4>Customer Reviews</h4>
         <h2>WHAT THEY SAY ...</h2>
-        <div class="review-card-container">
-          <div class="review-card-container">   
+        <div class="review-card-container flex-center-row" >
+          <div class="review-card">   
             <div class="top-container">
               <img src="./assets/users/cesar-rincon-XHVpWcr5grQ-unsplash.jpg" alt="Image">
               <div class="review-card-top-center-div">
@@ -312,7 +311,7 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius, tempore odio provident nemo fugiat eligendi! Enim cupiditate dolores voluptatum?</p>
           </div>
-          <div class="review-card-container">   
+          <div class="review-card">   
             <div class="top-container">
               <img src="./assets/users/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="Image">
               <div class="review-card-top-center-div">
@@ -328,7 +327,7 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius, tempore odio provident nemo fugiat eligendi! Enim cupiditate dolores voluptatum?</p>
           </div>
-          <div class="review-card-container">   
+          <div class="review-card">   
             <div class="top-container">
               <img src="./assets/users/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="Image">
               <div class="review-card-top-center-div">
@@ -342,7 +341,7 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius, tempore odio provident nemo fugiat eligendi! Enim cupiditate dolores voluptatum?</p>
           </div>
-          <div class="review-card-container">   
+          <div class="review-card">   
             <div class="top-container">
               <img src="./assets/users/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Image">
               <div class="review-card-top-center-div">
@@ -358,7 +357,7 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius, tempore odio provident nemo fugiat eligendi! Enim cupiditate dolores voluptatum?</p>
           </div>
-          <div class="review-card-container">   
+          <div class="review-card">   
             <div class="top-container">
               <img src="./assets/users/prince-akachi-J1OScm_uHUQ-unsplash.jpg" alt="Image">
               <div class="review-card-top-center-div">
@@ -374,7 +373,7 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius, tempore odio provident nemo fugiat eligendi! Enim cupiditate dolores voluptatum?</p>
           </div>
-          <div class="review-card-container">   
+          <div class="review-card">   
             <div class="top-container">
               <img src="./assets/users/robert-godwin-cdksyTqEXzo-unsplash.jpg" alt="Image">
               <div class="review-card-top-center-div">
@@ -391,40 +390,46 @@
         </div>
       </section>
 
-      <section id="order">
+      <section id="order" class="flex-center-column">
         <h4>Order Now</h4>
         <h2>FREE & FAST DELIVERY</h2>
-        <form action="">
-          <div>
-            <p>Your Name:</p>
-            <input type="text" name="username" size="15" maxlength="30"  required/>
+        <div class="flex-center-row">
+          <form action="">
+            <div>
+              <p>Your Name:</p>
+              <input type="text" name="username" size="15" maxlength="30"  required/>
+            </div>
+            <div>
+              <p>Number:</p>
+              <input type="number" name="username" size="15" maxlength="30"  required/>
+            </div>
+            <div>
+              <p>Address:</p>
+              <input type="text" name="username" size="15" maxlength="30"  required/>
+            </div>
+            <div>
+              <p>Your Order:</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+              <p>Date and time of delivery:</p>
+              <input type="text" name="username" size="15" maxlength="30"  required/>
+            </div>
+            <div>
+              <p>Additional Info:</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <input class="button" type="button" value="Submit">
+          </form>
+          <div class="watch-container">
+            <div id="time"></div>
+            <div id="date"></div>
           </div>
-          <div>
-            <p>Number:</p>
-            <input type="number" name="username" size="15" maxlength="30"  required/>
-          </div>
-          <div>
-            <p>Address:</p>
-            <input type="text" name="username" size="15" maxlength="30"  required/>
-          </div>
-          <div>
-            <p>Your Order:</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <div>
-            <p>Date and time of delivery:</p>
-            <input type="text" name="username" size="15" maxlength="30"  required/>
-          </div>
-          <div>
-            <p>Additional Info:</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <input type="button" value="Submit">
-        </form>
+        </div>
       </section>
     </main>
     <footer>
-      <div class="footer">
+      <div class="footer flex-center-row">
         <div class="locations-container">
           <h4>Locations</h4>
           <ul>
@@ -471,5 +476,6 @@
       </div>
       <p>Copyright Karan Mann as part of Hyper Island Project</p>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

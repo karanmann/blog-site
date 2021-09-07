@@ -1,14 +1,4 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body header nav {
-  background-color: #e5ebd5;
-  padding: 10px;
+.flex-center-row, body header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +9,75 @@ body header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flex-center-column, body .watch-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button, body main section div button {
+  border: none;
+  color: whitesmoke;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #089708;
+}
+
+.ul-row, body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ul-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon-image {
+  width: 20px;
+  height: 20px;
+}
+
+.large-image {
+  width: 150px;
+  height: 150px;
+}
+
+.card-image {
+  width: 80px;
+  height: 80px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body header nav {
+  background-color: #e5ebd5;
+  padding: 5px 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -31,19 +90,9 @@ body header nav div img {
   padding: 0 10px;
 }
 
-body header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 body header nav ul li {
   list-style: none;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-transform: uppercase;
 }
 
@@ -51,9 +100,29 @@ body header nav ul li a {
   text-decoration: none;
 }
 
-body .icon-image {
-  width: 20px;
-  height: 20px;
+body .watch-container {
+  width: 400px;
+  height: 400px;
+  background: #9dad6f;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 0 4px 95px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 4px 95px rgba(0, 0, 0, 0.25);
+}
+
+body #time {
+  font-size: 5rem;
+  font-weight: 600px;
+  color: #fff;
+}
+
+body #date {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-weight: 600px;
+  color: black;
 }
 
 body main section {
@@ -79,14 +148,9 @@ body main section div {
 body main section div img {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   margin-left: 30px;
-}
-
-body main section div button {
-  border: none;
-  color: whitesmoke;
-  padding: 15px 20px;
-  border-radius: 10px;
-  background-color: #089708;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
