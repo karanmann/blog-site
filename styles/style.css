@@ -1,4 +1,4 @@
-.flex-center-row, body header nav {
+.flex-center-row, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .stars-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.flex-center-column, body .watch-container {
+.flex-center-column, .watch-container, body header nav, body main .hero-container, body main .popular-dishes-container, body main .popular-dishes-container .card-container-popular-dishes, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +24,7 @@
           align-items: center;
 }
 
-.button, body main section div button {
+.button, body main .hero-container div button, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container button {
   border: none;
   color: whitesmoke;
   padding: 15px 20px;
@@ -32,7 +32,7 @@
   background-color: #089708;
 }
 
-.ul-row, body header nav ul {
+.ul-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +42,7 @@
           flex-direction: row;
 }
 
-.ul-column {
+.ul-column, body header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,40 +67,7 @@
   height: 80px;
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body header nav {
-  background-color: #e5ebd5;
-  padding: 5px 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: 0px 1px 1px grey;
-          box-shadow: 0px 1px 1px grey;
-}
-
-body header nav div img {
-  width: 30px;
-  padding: 0 10px;
-}
-
-body header nav ul li {
-  list-style: none;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-body header nav ul li a {
-  text-decoration: none;
-}
-
-body .watch-container {
+.watch-container {
   width: 400px;
   height: 400px;
   background: #9dad6f;
@@ -112,45 +79,112 @@ body .watch-container {
           box-shadow: inset 0 4px 95px rgba(0, 0, 0, 0.25);
 }
 
-body #time {
+#time {
   font-size: 5rem;
   font-weight: 600px;
   color: #fff;
 }
 
-body #date {
+#date {
   font-size: 1.3rem;
   margin-top: 20px;
   font-weight: 600px;
   color: black;
 }
 
-body main section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body header nav {
+  background-color: #e5ebd5;
+  padding: 5px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 1px 1px grey;
+          box-shadow: 0px 1px 1px grey;
+}
+
+body header nav .nav-logo p {
+  font-size: 30px;
+}
+
+body header nav .nav-logo p img {
+  height: 70px;
+  width: 70px;
+}
+
+body header nav ul li {
+  font-size: 20px;
+  list-style: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+body header nav ul li a {
+  text-decoration: none;
+}
+
+body header nav .nav-navlink-icons img {
+  height: 40px;
+  padding: 30px 20px;
+}
+
+body main .hero-container {
   padding: 70px;
   -webkit-box-shadow: 0px 1px 1px grey;
           box-shadow: 0px 1px 1px grey;
 }
 
-body main section div {
+body main .hero-container div {
   text-align: center;
+  margin-bottom: 3em;
 }
 
-body main section div img {
-  width: 50px;
-  height: 50px;
+body main .hero-container div img {
+  width: 20em;
+  height: 20em;
   border-radius: 50%;
-  margin-left: 30px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body main .popular-dishes-container .card-container-popular-dishes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid grey;
+  width: 70%;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-icons-container img {
+  height: 20px;
+  weight: 20px;
+}
+
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes img {
+  width: 100%;
+}
+
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container button {
+  margin-left: 100px;
 }
 /*# sourceMappingURL=style.css.map */
