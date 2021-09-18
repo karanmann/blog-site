@@ -1,4 +1,4 @@
-.flex-center-row, body header nav .nav-logo, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-icons-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .stars-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container, body main .why-choose-us .banner-container .banner-text-container .button-container, body main .why-choose-us .banner-container .banner-text-container .button-container .about-button {
+.flex-center-row, body header nav .nav-logo, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-icons-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .stars-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container, body main .why-choose-us .banner-container .banner-text-container .button-container, body main .why-choose-us .banner-container .banner-text-container .button-container .about-button, body main .todays-special .cards-container-todays-special .card-todays-special .stars-container, body main .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,10 @@
           align-items: center;
 }
 
-.flex-center-column, .watch-container, body header, body header nav, body header nav ul, body main .hero-container, body main .popular-dishes-container, body main .popular-dishes-container .card-container-popular-dishes, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes, body main .why-choose-us, body main .why-choose-us .banner-container, body main .why-choose-us .banner-container .banner-text-container, body main .todays-special, body main .todays-special .cards-container-todays-special .card-todays-special, body main .customer-review, body main .customer-review .review-card-container, body main .customer-review .review-card-container .review-card {
+.flex-center-column, .watch-container, body header nav, body header nav .nav-navlink-site, body main .hero-container, body main .popular-dishes-container, body main .popular-dishes-container .card-container-popular-dishes, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes, body main .why-choose-us, body main .why-choose-us .banner-container, body main .why-choose-us .banner-container .banner-text-container, body main .todays-special, body main .todays-special .cards-container-todays-special, body main .todays-special .cards-container-todays-special .card-todays-special, body .order-form-container, body .customer-review, body .customer-review .review-card-container, body .customer-review .review-card-container .review-card, body .footer, body .footer .locations-container,
+body .footer .quick-links-container,
+body .footer .contact-info-container .follow-us-container, body .footer .quick-links,
+body .footer .follow-us-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +27,7 @@
           align-items: center;
 }
 
-.button, body main .hero-container div button, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container button, body main .why-choose-us .banner-container .banner-text-container .button-container .about-button, body main .why-choose-us .banner-container .banner-text-container .learn-more-button {
+.button, body main .hero-container div button, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container button, body main .why-choose-us .banner-container .banner-text-container .button-container .about-button, body main .why-choose-us .banner-container .banner-text-container .learn-more-button, body main .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container button {
   border: none;
   color: whitesmoke;
   padding: 15px 20px;
@@ -68,8 +71,8 @@
 }
 
 .watch-container {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   background: #9dad6f;
   border-radius: 50%;
   -webkit-box-pack: center;
@@ -80,7 +83,7 @@
 }
 
 #time {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600px;
   color: #fff;
 }
@@ -101,14 +104,11 @@ body {
 }
 
 body header nav {
-  width: 100%;
   background-color: #e5ebd5;
   padding: 5px 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 1px 1px grey;
-          box-shadow: 0px 1px 1px grey;
 }
 
 body header nav .nav-logo p {
@@ -118,18 +118,21 @@ body header nav .nav-logo p {
 body header nav .nav-logo img {
   height: 70px;
   width: 70px;
-  margin-right: 10px;
 }
 
-body header nav ul li {
+body header nav .nav-navlink-site {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav .nav-navlink-site a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
   font-size: 20px;
   list-style: none;
   padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-body header nav ul li a {
-  text-decoration: none;
 }
 
 body header nav .nav-navlink-icons img {
@@ -260,19 +263,64 @@ body main .todays-special .cards-container-todays-special .card-todays-special {
           justify-content: center;
   -webkit-box-shadow: 0px 0px 6px 2px #4F4F4F;
           box-shadow: 0px 0px 6px 2px #4F4F4F;
-  width: 70%;
+  width: 80%;
   border-radius: 5px;
   margin: 20px;
+  padding: 20px;
 }
 
-body main .customer-review .review-card-container {
+body main .todays-special .cards-container-todays-special .card-todays-special .card-icons-container img {
+  width: 20px;
+  height: 20px;
+  background-color: #9ae28c;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+body main .todays-special .cards-container-todays-special .card-todays-special img {
+  width: 100%;
+}
+
+body main .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body .customer-review .review-card-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-body main .customer-review .review-card-container .review-card .top-container img {
+body .customer-review .review-card-container .review-card .top-container img {
   height: 20px;
   width: 20px;
+}
+
+body .footer {
+  width: 100%;
+}
+
+body .footer .locations-container,
+body .footer .quick-links-container,
+body .footer .contact-info-container .follow-us-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+  body .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 /*# sourceMappingURL=style.css.map */

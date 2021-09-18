@@ -10,16 +10,16 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
   header {
-    @extend .flex-center-column;
-  //NAVBAR
+  
+    //NAVBAR
 
     nav {
-      width: 100%;
+      // width: 100%;
       @extend .flex-center-column;
       background-color: $background-grey;
       padding: 5px 10px;
       align-items: center;
-      box-shadow:0px 1px 1px grey;
+      // box-shadow:0px 1px 1px grey;
       
       .nav-logo {
         @extend .flex-center-row;
@@ -29,20 +29,20 @@ body {
         img {
           height:70px;
           width:70px;
-          margin-right: 10px;
+          // margin-right: 10px;
         }
       }
 
-      ul {
+      .nav-navlink-site {
         @extend .flex-center-column;
-        li {
+        align-items: center;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          text-align: center;
           font-size: 20px;
           list-style: none;
           padding: 10px 20px;
-          text-transform: uppercase;
-          a {
-            text-decoration: none;
-          }
         }
       }
 
@@ -185,39 +185,94 @@ body {
       justify-content: center;
       
       .cards-container-todays-special {
+        @extend .flex-center-column;
         .card-todays-special {
           @extend .flex-center-column;
           justify-content: center;
           box-shadow: 0px 0px 6px 2px #4F4F4F;
-          width:70%;
+          width:80%;
           border-radius: 5px;
           margin: 20px;
+          padding: 20px;
+          
+          .card-icons-container {
+            img {
+              width: 20px;
+              height: 20px;
+              background-color: rgb(154, 226, 140);
+              padding: 10px;
+              border-radius: 50%;
+            }
+          }
+          img {
+            width: 100%;
+          }
+          .stars-container {
+            @extend .flex-center-row
+          }
+
+          .card-bottom-container {
+            @extend .flex-center-row;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 50px;
+            button {
+              @extend .button;
+            }
+            margin-bottom: 50px;
+          }
+          }
         }
       }
     }
+  .order-form-container {
+
+    @extend .flex-center-column;
+  }
     
 
     //REVIEWS CONTAINER
 
-    .customer-review {
+  .customer-review {
+    @extend .flex-center-column;
+
+    .review-card-container {
       @extend .flex-center-column;
-
-      .review-card-container {
+      justify-content: center;
+      
+      .review-card {
         @extend .flex-center-column;
-        justify-content: center;
-        
-        .review-card {
-          @extend .flex-center-column;
 
-          .top-container {
-            img {
-              height:20px;
-              width: 20px;
-            }
+        .top-container {
+          img {
+            height:20px;
+            width: 20px;
           }
         }
-
       }
     }
   }
+
+  .footer {
+    @extend .flex-center-column;
+    width: 100%;
+    
+    .locations-container,
+    .quick-links-container,
+    .contact-info-container
+    .follow-us-container {
+      @extend .flex-center-column;
+      justify-content: center;
+    }
+
+    .quick-links,
+    .follow-us-links {
+      @extend .flex-center-column;
+    }
+
+    @media (min-width: $mediaTabletmin) and (max-width: $mediaTabletMax) {
+      display: flex;
+      flex-direction: row;
+    }
   }
+}
