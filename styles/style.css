@@ -1,16 +1,30 @@
-.flex-center-row, body main .why-choose-us .banner-container .banner-text-container .button-container .about-button, body main .why-choose-us .banner-container .banner-text-container .button-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .stars-container, body header nav .nav-logo {
+.flex-center-row, body header nav .nav-logo, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-icons-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .stars-container, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container, body main .why-choose-us .banner-container .banner-text-container .button-container, body main .why-choose-us .banner-container .banner-text-container .button-container .about-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.flex-center-column, body main .customer-review .review-card-container .review-card, body main .customer-review .review-card-container, body main .customer-review, body main .why-choose-us .banner-container .banner-text-container, body main .why-choose-us .banner-container, body main .why-choose-us, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes, body main .popular-dishes-container .card-container-popular-dishes, body main .popular-dishes-container, body main .hero-container, body header nav ul, body header nav, body header, .watch-container {
+.flex-center-column, .watch-container, body header, body header nav, body header nav ul, body main .hero-container, body main .popular-dishes-container, body main .popular-dishes-container .card-container-popular-dishes, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes, body main .why-choose-us, body main .why-choose-us .banner-container, body main .why-choose-us .banner-container .banner-text-container, body main .todays-special, body main .todays-special .cards-container-todays-special .card-todays-special, body main .customer-review, body main .customer-review .review-card-container, body main .customer-review .review-card-container .review-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.button, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container button, body main .hero-container div button {
+.button, body main .hero-container div button, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container button, body main .why-choose-us .banner-container .banner-text-container .button-container .about-button, body main .why-choose-us .banner-container .banner-text-container .learn-more-button {
   border: none;
   color: whitesmoke;
   padding: 15px 20px;
@@ -19,13 +33,23 @@
 }
 
 .ul-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .ul-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .icon-image {
@@ -48,8 +72,11 @@
   height: 400px;
   background: #9dad6f;
   border-radius: 50%;
-  justify-content: center;
-  box-shadow: inset 0 4px 95px rgba(0, 0, 0, 0.25);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 0 4px 95px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 4px 95px rgba(0, 0, 0, 0.25);
 }
 
 #time {
@@ -68,45 +95,59 @@
 body {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body header nav {
   width: 100%;
   background-color: #e5ebd5;
   padding: 5px 10px;
-  align-items: center;
-  box-shadow: 0px 1px 1px grey;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 1px 1px grey;
+          box-shadow: 0px 1px 1px grey;
 }
+
 body header nav .nav-logo p {
   font-size: 30px;
 }
+
 body header nav .nav-logo img {
   height: 70px;
   width: 70px;
   margin-right: 10px;
 }
+
 body header nav ul li {
   font-size: 20px;
   list-style: none;
   padding: 10px 20px;
   text-transform: uppercase;
 }
+
 body header nav ul li a {
   text-decoration: none;
 }
+
 body header nav .nav-navlink-icons img {
   height: 40px;
   padding: 30px 20px;
 }
+
 body main .hero-container {
   padding: 70px;
-  box-shadow: 0px 1px 1px grey;
+  -webkit-box-shadow: 0px 1px 1px grey;
+          box-shadow: 0px 1px 1px grey;
 }
+
 body main .hero-container div {
   text-align: center;
   margin-bottom: 3em;
 }
+
 body main .hero-container div img {
   width: 20em;
   height: 20em;
@@ -114,61 +155,124 @@ body main .hero-container div img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 body main .popular-dishes-container .card-container-popular-dishes {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes {
-  justify-content: center;
-  border: 2px solid grey;
-  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 6px 2px #4F4F4F;
+          box-shadow: 0px 0px 6px 2px #4F4F4F;
+  width: 80%;
   border-radius: 5px;
   margin: 20px;
+  padding: 20px;
 }
-body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-icons-container img {
+
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-icons-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 10px;
+}
+
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-icons-container .eye-icon,
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-icons-container .heart-icon {
   height: 20px;
   width: 20px;
+  background-color: #9ae28c;
+  padding: 8px;
+  border-radius: 50%;
 }
+
 body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes img {
   width: 100%;
+  border-radius: 20px;
 }
+
 body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
 }
+
 body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container button {
   margin-left: 100px;
 }
+
 body main .why-choose-us {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 body main .why-choose-us .banner-container {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 body main .why-choose-us .banner-container .banner-image {
   width: 80%;
   border-radius: 50%;
   margin: 5% 0;
 }
+
 body main .why-choose-us .banner-container .banner-text-container {
   width: 80%;
   margin: 5% 0;
 }
+
 body main .why-choose-us .banner-container .banner-text-container .button-container {
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 body main .why-choose-us .banner-container .banner-text-container .button-container .about-button {
   margin: 0 3%;
   font-size: 10px;
 }
+
 body main .why-choose-us .banner-container .banner-text-container .button-container .about-button img {
   margin-right: 5px;
 }
+
 body main .why-choose-us .banner-container .banner-text-container .learn-more-button {
   margin: 8% 0;
 }
-body main .customer-review .review-card-container {
-  justify-content: center;
+
+body main .todays-special {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+body main .todays-special .cards-container-todays-special .card-todays-special {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 6px 2px #4F4F4F;
+          box-shadow: 0px 0px 6px 2px #4F4F4F;
+  width: 70%;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+body main .customer-review .review-card-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body main .customer-review .review-card-container .review-card .top-container img {
   height: 20px;
   width: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
