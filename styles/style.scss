@@ -19,8 +19,8 @@ body {
       background-color: $background-grey;
       padding: 5px 10px;
       align-items: center;
-      // box-shadow:0px 1px 1px grey;
-      
+      box-shadow:0px 1px 1px $box-shadow-color;
+ 
       .nav-logo {
         @extend .flex-center-row;
         p {
@@ -29,7 +29,7 @@ body {
         img {
           height:70px;
           width:70px;
-          // margin-right: 10px;
+          margin-right: 20px;
         }
       }
 
@@ -44,11 +44,17 @@ body {
           list-style: none;
           padding: 10px 20px;
         }
+        @media (min-width: $mediaTabletMin) {
+          flex-direction: row;
+          a {
+            font-size: 20px;;
+          }
+        }
       }
 
       .nav-navlink-icons{
         img { 
-          height: 40px;
+          height: 30px;
           padding: 30px 20px
         }
       }
@@ -78,6 +84,7 @@ body {
 
         button {
           @extend .button;
+          font-weight: 600;
         }
       }
     }
@@ -90,15 +97,25 @@ body {
       .card-container-popular-dishes {
         @extend .flex-center-column;
         justify-content: center;
-        
+        @media (min-width: $mediaTabletMin){
+          flex-direction: row;
+          flex-wrap: wrap;
+        };
+        @media (min-width: $mediaDesktopMin) {};
         .card-popular-dishes {
           @extend .flex-center-column;
           justify-content: center;
-          box-shadow: 0px 0px 6px 2px #4F4F4F;
+          box-shadow: 0px 0px 6px 2px $box-shadow-color;
           width:80%;
           border-radius: 5px;
           margin: 20px;
           padding: 20px;
+          @media (min-width: $mediaTabletMin) {
+            width: 35%;
+          }
+          @media (min-width: $mediaDesktopMin) {
+            width: 20%;
+          }
           
           .card-icons-container {
             @extend .flex-center-row;
@@ -109,14 +126,15 @@ body {
             .heart-icon {
               height: 20px;
               width: 20px;
-              background-color: rgb(154, 226, 140);
+              background-color: $icon-background;
               padding: 8px;
               border-radius: 50%;
             }
           }
 
           img {
-            width: 100%;
+            height: 200px;
+
             border-radius: 20px;
           }
 
@@ -146,7 +164,7 @@ body {
         @extend .flex-center-column;
         align-items: center;
         .banner-image {
-          width: 80%;
+          width: 50%;
           border-radius: 50%;
           margin: 5% 0;
         }
@@ -163,10 +181,10 @@ body {
               @extend .flex-center-row;
               @extend .button;
               margin: 0 3%;
-              font-size: 10px;
+              font-size: 11px;
               
               img {
-                margin-right: 5px;
+                padding-right: 4px;
               }
             }
           }
@@ -174,6 +192,9 @@ body {
           .learn-more-button {
             @extend .button;
             margin: 8% 0;
+            font-size: 18px;
+            font-weight: 600;
+            
             
           }
         }
@@ -186,26 +207,43 @@ body {
       
       .cards-container-todays-special {
         @extend .flex-center-column;
+        justify-content: center;
+        @media (min-width: $mediaTabletMin){
+          flex-direction: row;
+          flex-wrap: wrap;
+        };
         .card-todays-special {
           @extend .flex-center-column;
           justify-content: center;
-          box-shadow: 0px 0px 6px 2px #4F4F4F;
+          box-shadow: 0px 0px 6px 2px $box-shadow-color;
           width:80%;
           border-radius: 5px;
           margin: 20px;
           padding: 20px;
+          @media (min-width: $mediaTabletMin) {
+            width: 35%;
+            height: 550px;
+          }
+          @media (min-width: $mediaDesktopMin) {
+            width: 20%;
+          }
           
           .card-icons-container {
+            text-align: right;
+            width: 100%;
             img {
               width: 20px;
               height: 20px;
-              background-color: rgb(154, 226, 140);
+              background-color: $icon-background;
               padding: 10px;
               border-radius: 50%;
+              margin: 20px;
+              ;
             }
           }
           img {
-            width: 100%;
+            height: 40%;
+            width: 70%;
           }
           .stars-container {
             @extend .flex-center-row
@@ -218,6 +256,7 @@ body {
             margin-top: 50px;
             button {
               @extend .button;
+              width: 150px;
             }
             margin-bottom: 50px;
           }
@@ -245,8 +284,8 @@ body {
 
         .top-container {
           img {
-            height:20px;
-            width: 20px;
+            height:40px;
+            width: 40px;
           }
         }
       }
@@ -268,11 +307,6 @@ body {
     .quick-links,
     .follow-us-links {
       @extend .flex-center-column;
-    }
-
-    @media (min-width: $mediaTabletmin) and (max-width: $mediaTabletMax) {
-      display: flex;
-      flex-direction: row;
     }
   }
 }
