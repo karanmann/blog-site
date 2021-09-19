@@ -264,11 +264,6 @@ body {
         }
       }
     }
-  .order-form-container {
-
-    @extend .flex-center-column;
-  }
-    
 
     //REVIEWS CONTAINER
 
@@ -281,13 +276,53 @@ body {
       
       .review-card {
         @extend .flex-center-column;
-
+        justify-content: center;
+        box-shadow: 0px 0px 6px 2px $box-shadow-color;
+        width:80%;
+        border-radius: 5px;
+        margin: 20px;
+        padding: 20px;
         .top-container {
-          img {
-            height:40px;
-            width: 40px;
+          @extend .flex-center-row;
+          align-items: flex-start;
+          justify-content: space-around;
+          width: 100%;
+          .avatar-image {
+            height:70px;
+            width: 70px;
+            border-radius: 50%;
           }
+          .quotes-image {
+            height: 40px;
+            width: 40px;
+            opacity: 0.5;
+          }
+          
+          .review-card-top-center-div {
+            text-align: center;
+            .avatar-text {
+              font-size: 20px;
+            }
+            .star-container{
+              @extend .flex-center-row;
+              gap:5px;
+            }
+          }
+
         }
+          
+      }
+    }
+  }
+
+  .order-form-container {
+    @extend .flex-center-column;
+    justify-content: center;
+
+    .order-form{
+      text-align: center;
+      input {
+        width: 60%;
       }
     }
   }
