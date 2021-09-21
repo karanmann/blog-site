@@ -19,7 +19,10 @@ body {
       background-color: $nav-background;
       padding: 5px 10px;
       align-items: center;
-      box-shadow:0px 1px 1px $box-shadow-color;
+      @media (min-width: $mediaDesktopMin) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
 
       .nav-logo {
         @extend .flex-center-row;
@@ -76,14 +79,22 @@ body {
   // MAIN 
 
   main {
-
+    
+    section {
+      padding: 70px 0px;
+    }
     // HOME-TOP-CONTAINER
 
     .hero-container {
       @extend .flex-center-column;
+      
       padding: 70px;
-      box-shadow:0px 1px 1px grey;
+      // box-shadow:0px 1px 1px grey;
       background-color: $background-color;
+      @media (min-width: $mediaDesktopMin) {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+      }
 
       div {
         text-align: center;
@@ -93,6 +104,10 @@ body {
           height: 20em;
           border-radius: 50%;
           object-fit: cover;
+          @media (min-width: $mediaDesktopMin) {
+            width: 30em;
+            height: 30em;
+          }
         }
 
         button {
@@ -158,6 +173,7 @@ body {
 
           .stars-container {
             @extend .flex-center-row;
+            gap: 7px;
           }
 
           .card-bottom-container {
@@ -182,17 +198,26 @@ body {
       .banner-container {
         @extend .flex-center-column;
         align-items: center;
-        
+        @media (min-width: $mediaDesktopMin) {
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
         .banner-image {
           width: 50%;
           border-radius: 50%;
           margin: 5% 0;
+          @media (min-width: $mediaDesktopMin) {
+            width: 30em;
+            height: 30em;
+          }
         }
         .banner-text-container {
           @extend .flex-center-column;
           width: 80%;
           margin: 5% 0;
-
+          @media (min-width: $mediaDesktopMin) {
+            width: 50%;
+          }
           .button-container {
             @extend .flex-center-row;
             justify-content: space-evenly;
@@ -266,12 +291,13 @@ body {
           }
 
           img {
-            height: 40%;
-            width: 70%;
+            width: 15em;
+            height: 20em;
           }
 
           .stars-container {
-            @extend .flex-center-row
+            @extend .flex-center-row;
+            gap: 7px;
           }
 
           .card-bottom-container {
@@ -368,10 +394,18 @@ body {
   .order-form-container {
     @extend .flex-center-column;
     justify-content: center;
-
+    background-image: url(../assets/food-images/Minimalist-Wallpaper-1920x1080-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     .order-form{
       text-align: center;
-      
+      width: 100%;
+      @media (min-width: $mediaDesktopMin) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
       input {
         width: 60%;
       }
