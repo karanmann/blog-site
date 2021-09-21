@@ -4,10 +4,10 @@
   align-items: center;
 }
 
-.flex-center-column, body .footer .quick-links,
-body .footer .follow-us-links, body .footer .locations-container,
-body .footer .quick-links-container,
-body .footer .contact-info-container .follow-us-container, body .footer, body .order-form-container, body .customer-review .review-card-container .review-card, body .customer-review .review-card-container, body .customer-review, body main .todays-special .cards-container-todays-special .card-todays-special, body main .todays-special .cards-container-todays-special, body main .todays-special, body main .why-choose-us .banner-container .banner-text-container, body main .why-choose-us .banner-container, body main .why-choose-us, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes, body main .popular-dishes-container .card-container-popular-dishes, body main .popular-dishes-container, body main .hero-container, body header nav .nav-navlink-site, body header nav, .watch-container {
+.flex-center-column, body footer .quick-links,
+body footer .follow-us-links, body footer .locations-container,
+body footer .quick-links-container,
+body footer .contact-info-container .follow-us-container, body footer, body .order-form-container, body .customer-review .review-card-container .review-card, body .customer-review .review-card-container, body .customer-review, body main .todays-special .cards-container-todays-special .card-todays-special, body main .todays-special .cards-container-todays-special, body main .todays-special, body main .why-choose-us .banner-container .banner-text-container, body main .why-choose-us .banner-container, body main .why-choose-us, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes, body main .popular-dishes-container .card-container-popular-dishes, body main .popular-dishes-container, body main .hero-container, body header nav .nav-navlink-site, body header nav, .watch-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,15 @@ body .footer .contact-info-container .follow-us-container, body .footer, body .o
   color: whitesmoke;
   padding: 15px 20px;
   border-radius: 10px;
-  background-color: #089708;
+  background-color: #718355;
+}
+.button:hover, body main .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container button:hover, body main .why-choose-us .banner-container .banner-text-container .learn-more-button:hover, body main .why-choose-us .banner-container .banner-text-container .button-container .about-button:hover, body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes .card-bottom-container button:hover, body main .hero-container div button:hover {
+  gap: 2px;
+  transform: scale(1.05);
+  transition: 0.2s ease-out;
+  background-color: #97a97c;
+  border: 2px solid #718355;
+  color: #000;
 }
 
 .ul-row {
@@ -75,7 +83,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body header nav {
-  background-color: #e5ebd5;
+  background-color: #718355;
   padding: 5px 10px;
   align-items: center;
   box-shadow: 0px 1px 1px #4F4F4F;
@@ -99,6 +107,10 @@ body header nav .nav-navlink-site a {
   list-style: none;
   padding: 10px 20px;
 }
+body header nav .nav-navlink-site a:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
 @media (min-width: 768px) {
   body header nav .nav-navlink-site {
     flex-direction: row;
@@ -111,9 +123,14 @@ body header nav .nav-navlink-icons img {
   height: 30px;
   padding: 30px 20px;
 }
+body header nav .nav-navlink-icons img:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
 body main .hero-container {
   padding: 70px;
   box-shadow: 0px 1px 1px grey;
+  background-color: #e9f5db;
 }
 body main .hero-container div {
   text-align: center;
@@ -145,6 +162,10 @@ body main .popular-dishes-container .card-container-popular-dishes .card-popular
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
+}
+body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-out;
 }
 @media (min-width: 768px) {
   body main .popular-dishes-container .card-container-popular-dishes .card-popular-dishes {
@@ -182,6 +203,7 @@ body main .popular-dishes-container .card-container-popular-dishes .card-popular
 }
 body main .why-choose-us {
   align-items: center;
+  background-color: #e9f5db;
 }
 body main .why-choose-us .banner-container {
   align-items: center;
@@ -230,6 +252,10 @@ body main .todays-special .cards-container-todays-special .card-todays-special {
   margin: 20px;
   padding: 20px;
 }
+body main .todays-special .cards-container-todays-special .card-todays-special:hover {
+  transform: scale(1.03);
+  transition: 0.5s ease-out;
+}
 @media (min-width: 768px) {
   body main .todays-special .cards-container-todays-special .card-todays-special {
     width: 35%;
@@ -266,6 +292,9 @@ body main .todays-special .cards-container-todays-special .card-todays-special .
 body main .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container button {
   width: 150px;
 }
+body .customer-review {
+  background-color: #e9f5db;
+}
 body .customer-review .review-card-container {
   justify-content: center;
 }
@@ -277,11 +306,21 @@ body .customer-review .review-card-container {
 }
 body .customer-review .review-card-container .review-card {
   justify-content: center;
+  background-color: whitesmoke;
   box-shadow: 0px 0px 6px 2px #4F4F4F;
   width: 80%;
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
+}
+body .customer-review .review-card-container .review-card:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-out;
+}
+body .customer-review .review-card-container .review-card:hover .top-container .avatar-image,
+body .customer-review .review-card-container .review-card:hover .top-container .quotes-image {
+  transform: scale(1.5);
+  transition: 0.5s ease-out;
 }
 @media (min-width: 768px) {
   body .customer-review .review-card-container .review-card {
@@ -328,11 +367,12 @@ body .order-form-container .order-form {
 body .order-form-container .order-form input {
   width: 60%;
 }
-body .footer {
+body footer {
   width: 100%;
+  background-color: #718355;
 }
-body .footer .locations-container,
-body .footer .quick-links-container,
-body .footer .contact-info-container .follow-us-container {
+body footer .locations-container,
+body footer .quick-links-container,
+body footer .contact-info-container .follow-us-container {
   justify-content: center;
 }/*# sourceMappingURL=style.css.map */

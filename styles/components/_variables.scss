@@ -1,5 +1,8 @@
-$background-grey: #e5ebd5;
-$button-green: rgb(8, 151, 8);
+$nav-background: rgba(113, 131, 85, 1);
+$background-color: rgba(233, 245, 219, 1);
+$background-white: whitesmoke; 
+$button-green: rgba(113, 131, 85, 1);
+$button-green-hover: rgba(151, 169, 124, 1);
 $icon-background: rgb(154, 226, 140);
 $box-shadow-color: #4F4F4F;
 $mediaDesktopMin: 1260px;
@@ -25,6 +28,14 @@ $mediaMinWidth: 480px;
   padding:15px 20px;
   border-radius: 10px;
   background-color: $button-green;
+  &:hover {
+    gap: 2px;
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+    background-color: $button-green-hover;
+    border: 2px solid $button-green;
+    color: #000;
+  }
 }
 
 .ul-row {

@@ -16,16 +16,18 @@ body {
     nav {
       // width: 100%;
       @extend .flex-center-column;
-      background-color: $background-grey;
+      background-color: $nav-background;
       padding: 5px 10px;
       align-items: center;
       box-shadow:0px 1px 1px $box-shadow-color;
- 
+
       .nav-logo {
         @extend .flex-center-row;
+
         p {
           font-size: 30px;
         }
+        
         img {
           height:70px;
           width:70px;
@@ -36,6 +38,7 @@ body {
       .nav-navlink-site {
         @extend .flex-center-column;
         align-items: center;
+
         a {
           text-decoration: none;
           text-transform: uppercase;
@@ -43,7 +46,12 @@ body {
           font-size: 20px;
           list-style: none;
           padding: 10px 20px;
+          &:hover {
+            transform: scale(1.2);
+            transition: .5s ease-in-out;
+          }
         }
+
         @media (min-width: $mediaTabletMin) {
           flex-direction: row;
           a {
@@ -55,7 +63,11 @@ body {
       .nav-navlink-icons{
         img { 
           height: 30px;
-          padding: 30px 20px
+          padding: 30px 20px;
+          &:hover {
+            transform: scale(1.2);
+            transition: .5s ease-in-out;
+          }
         }
       }
     }
@@ -71,6 +83,7 @@ body {
       @extend .flex-center-column;
       padding: 70px;
       box-shadow:0px 1px 1px grey;
+      background-color: $background-color;
 
       div {
         text-align: center;
@@ -92,6 +105,7 @@ body {
     // POPULAR DISHES 
 
     .popular-dishes-container{
+      
       @extend .flex-center-column;
 
       .card-container-popular-dishes {
@@ -100,8 +114,8 @@ body {
         @media (min-width: $mediaTabletMin){
           flex-direction: row;
           flex-wrap: wrap;
-        };
-        @media (min-width: $mediaDesktopMin) {};
+        }
+
         .card-popular-dishes {
           @extend .flex-center-column;
           justify-content: center;
@@ -110,6 +124,10 @@ body {
           border-radius: 5px;
           margin: 20px;
           padding: 20px;
+          &:hover {
+            transform: scale(1.05);
+            transition: 0.5s ease-out;
+          }
           @media (min-width: $mediaTabletMin) {
             width: 35%;
           }
@@ -122,6 +140,7 @@ body {
             justify-content: space-between;
             width:90%;
             margin: 10px;
+
             .eye-icon,
             .heart-icon {
               height: 20px;
@@ -134,7 +153,6 @@ body {
 
           img {
             height: 200px;
-
             border-radius: 20px;
           }
 
@@ -145,11 +163,11 @@ body {
           .card-bottom-container {
             @extend .flex-center-row;
             justify-content: space-around;
+            margin-bottom: 50px;
             button {
               @extend .button;
               margin-left: 100px;
             }
-            margin-bottom: 50px;
           }
         }
       };
@@ -159,10 +177,12 @@ body {
     .why-choose-us {
       @extend .flex-center-column;
       align-items: center;
+      background-color: $background-color;
 
       .banner-container {
         @extend .flex-center-column;
         align-items: center;
+        
         .banner-image {
           width: 50%;
           border-radius: 50%;
@@ -194,8 +214,6 @@ body {
             margin: 8% 0;
             font-size: 18px;
             font-weight: 600;
-            
-            
           }
         }
       }
@@ -211,7 +229,8 @@ body {
         @media (min-width: $mediaTabletMin){
           flex-direction: row;
           flex-wrap: wrap;
-        };
+        }
+
         .card-todays-special {
           @extend .flex-center-column;
           justify-content: center;
@@ -220,6 +239,10 @@ body {
           border-radius: 5px;
           margin: 20px;
           padding: 20px;
+          &:hover {
+            transform: scale(1.03);
+            transition: 0.5s ease-out;
+          }
           @media (min-width: $mediaTabletMin) {
             width: 35%;
             height: 550px;
@@ -241,10 +264,12 @@ body {
               ;
             }
           }
+
           img {
             height: 40%;
             width: 70%;
           }
+
           .stars-container {
             @extend .flex-center-row
           }
@@ -269,7 +294,7 @@ body {
 
   .customer-review {
     @extend .flex-center-column;
-
+    background-color: $background-color;
     .review-card-container {
       @extend .flex-center-column;
       justify-content: center;
@@ -283,11 +308,23 @@ body {
       .review-card {
         @extend .flex-center-column;
         justify-content: center;
+        background-color: $background-white;
         box-shadow: 0px 0px 6px 2px $box-shadow-color;
         width:80%;
         border-radius: 5px;
         margin: 20px;
         padding: 20px;
+        &:hover {
+          transform: scale(1.05);
+          transition: 0.5s ease-out;
+          .top-container {
+            .avatar-image,
+            .quotes-image {
+              transform: scale(1.5);
+              transition: 0.5s ease-out;
+            }
+          }
+        }
         @media (min-width: $mediaTabletMin) {
           width: 35%;
           flex-direction: row;
@@ -296,8 +333,7 @@ body {
         @media (min-width: $mediaDesktopMin) {
           width: 25%;
         }
-        
-        
+
         .top-container {
           @extend .flex-center-row;
           align-items: flex-start;
@@ -324,9 +360,7 @@ body {
               gap:5px;
             }
           }
-
         }
-          
       }
     }
   }
@@ -337,16 +371,17 @@ body {
 
     .order-form{
       text-align: center;
+      
       input {
         width: 60%;
       }
     }
   }
 
-  .footer {
+  footer {
     @extend .flex-center-column;
     width: 100%;
-    
+    background-color: $nav-background;
     .locations-container,
     .quick-links-container,
     .contact-info-container
