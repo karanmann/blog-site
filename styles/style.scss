@@ -7,40 +7,24 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+  // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+
   header {
   
-    //NAVBAR
+  //NAVBAR
 
     nav {
-      // width: 100%;
-      @extend .flex-center-column;
+      height: 80px;
       background-color: $nav-background;
-      padding: 5px 10px;
-      align-items: center;
-      @media (min-width: $mediaDesktopMin) {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+      position: fixed;
+      width: 100%;
 
-      .nav-logo {
+      .nav-links {
         @extend .flex-center-row;
-
-        p {
-          font-size: 30px;
-        }
-        
-        img {
-          height:70px;
-          width:70px;
-          margin-right: 20px;
-        }
-      }
-
-      .nav-navlink-site {
-        @extend .flex-center-column;
-        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        bottom: 10px;
 
         a {
           text-decoration: none;
@@ -49,29 +33,159 @@ body {
           font-size: 20px;
           list-style: none;
           padding: 10px 20px;
+          color:#000;
           &:hover {
             transform: scale(1.2);
             transition: .5s ease-in-out;
+            letter-spacing: 2px;
           }
         }
 
-        @media (min-width: $mediaTabletMin) {
-          flex-direction: row;
-          a {
-            font-size: 20px;;
+        img {
+            height:50px;
+            width:50px;
+        }
+
+        .nav-navlink-icons{
+          img { 
+            height: 30px;
+            padding: 30px 20px;
+            &:hover {
+              transform: scale(1.2);
+              transition: .5s ease-in-out;
+            }
           }
         }
+
+        @media (max-width: $mediaDesktopMin) {
+            display: none;
+          }
+      
       }
-
-      .nav-navlink-icons{
-        img { 
-          height: 30px;
-          padding: 30px 20px;
-          &:hover {
-            transform: scale(1.2);
-            transition: .5s ease-in-out;
+        
+      .hamburger { 
+        display: flex;
+        flex-direction: row;
+        @media (min-width: $mediaDesktopMin) {
+              display: none;
           }
-        }
+        .menu-toggle {
+          display: block;
+          position: relative;
+          top: 25px;
+          left: 20px;
+          z-index: 1;
+          
+
+          a {
+            text-decoration: none;
+            color: #232323;
+            transition: color 0.3s ease;
+          
+            &:hover {
+              color: tomato;
+              font-weight: 700;
+              letter-spacing: 2px;
+            }
+          } 
+
+          input {
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 2;
+
+            &:checked~span:nth-last-child(n) {
+              opacity: 1;
+              transform: rotate(45deg) translate(-2px, -1px);
+              background: #232323;
+            }
+
+            &:checked~span:nth-last-child(3) {
+              opacity: 0;
+              transform: rotate(0deg) scale(0.2, 0.2);
+            }
+
+            &:checked~span:nth-last-child(2) {
+              transform: rotate(-45deg) translate(-2px, -1px);
+            }
+
+            &:checked~ul {
+              transform: none;
+            }  
+          }
+
+            span {
+              display: block;
+              width: 37px;
+              height: 4px;
+              margin-bottom: 5px;
+              position: relative;
+              background: #000;
+              border-radius: 3px;
+              z-index: 1;
+              transform-origin: 4px 1px;
+              transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+              
+              &::first-child {
+                transform-origin: 0% 0%;
+              }
+
+              &::nth-last-child(2) {
+                transform-origin: 0% 100%;
+              }
+            }
+
+          }
+          
+          .menu {
+            position: absolute;
+            width: 300px;
+            margin: -100px 0 0 -50px;
+            padding: 50px;
+            padding-top: 125px;
+            background: #ededed;
+            list-style-type: none;
+            -webkit-font-smoothing: antialiased;
+            /*tostopflickeringoftextinsafari*/
+            transform-origin: 0% 0%;
+            transform: translate(-100%, 0);
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+            li {
+              padding: 10px 0;
+              font-size: 22px;
+            }
+          }
+      }
+          .nav-navlink-icons-dropdown,
+          .nav-navlink-icons {
+            img { 
+              height: 30px;
+              padding: 30px 20px;
+              position: relative;
+              &:hover {
+                transform: scale(1.2);
+                transition: .5s ease-in-out;
+              }
+            }
+          }
+
+          .nav-navlink-icons-dropdown {
+            left: 50px;
+          }
+
+          img {
+            height:50px;
+            width:50px;
+            padding-top:12px;
+            padding-left: 30px;
+          }
       }
     }
   }
@@ -87,8 +201,8 @@ body {
 
     .hero-container {
       @extend .flex-center-column;
-      
-      padding: 70px;
+
+      padding: 100px 70px 70px 70px;
       // box-shadow:0px 1px 1px grey;
       background-color: $background-color;
       @media (min-width: $mediaDesktopMin) {
@@ -339,14 +453,14 @@ body {
         width:80%;
         border-radius: 5px;
         margin: 20px;
-        padding: 20px;
+        padding: 60px 20px 20px 20px;
         &:hover {
           transform: scale(1.05);
           transition: 0.5s ease-out;
           .top-container {
             .avatar-image,
             .quotes-image {
-              transform: scale(1.5);
+              transform: scale(1.8);
               transition: 0.5s ease-out;
             }
           }
@@ -394,9 +508,15 @@ body {
   .order-form-container {
     @extend .flex-center-column;
     justify-content: center;
+    text-align: center;
     background-image: url(../assets/food-images/Minimalist-Wallpaper-1920x1080-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    .watch-container {
+      @media (max-width: $mediaDesktopMin) {
+        display: none;
+      }
+    }
     .order-form{
       text-align: center;
       width: 100%;
@@ -429,4 +549,3 @@ body {
       @extend .flex-center-column;
     }
   }
-}
