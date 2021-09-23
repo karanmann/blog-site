@@ -487,6 +487,27 @@
     <section class="recipe-search">
       <h4>Dont feel like ordering</h4>
       <h2>INSPIRATIONS AND RECIPES</h2>
+      <br/>
+      <h3 class="looking-h3">
+        Lets help you find a great recipe to cook...
+      </h3>
+      <div>
+        <form class="filter-form" onsubmit="fetchEdamamData(event)">
+          
+          <div class="main-ingredient-container">
+            <label for="ingredient">Search by Ingredient</label>
+            <input id="main-ingredient" type="text" required>
+          </div>
+          <div class="number-of-recipes-container">
+            <label for="recipes" >Number of Recipes</label>
+            <input id="number-of-recipes" type="number" required>
+          </div>
+          <input id="submit" name="submit" type="submit" value="Search">
+        </form>
+      </div>
+      <section class="recipe-list" id="recipeList">
+      <!--CODE INJECTED FROM JAVASCRIPT, with the restaurant cards and images-->
+      </section>
     </section>
   </main>
   <footer>
@@ -541,7 +562,9 @@
     </div>
     <p>Copyright Karan Mann as part of Hyper Island Project</p>
   </footer>
-  <script src="./scripts/script.js"></script>
+  <script src="./scripts/clock.js"></script>
+  <script src="./scripts/edamam.js"></script>
+
 </body>
 
 </html>

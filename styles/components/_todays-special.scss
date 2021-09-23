@@ -1,0 +1,75 @@
+.todays-special {
+@extend .flex-center-column;
+justify-content: center;
+background-image: url(../assets/images/cabbage-5337431_1920.jpg);
+@extend .paralax-effect;
+color: $background-white;
+
+.cards-container-todays-special {
+  @extend .flex-center-column;
+  justify-content: center;
+  @media (min-width: $mediaTabletMin){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card-todays-special {
+  @extend .flex-center-column;
+  justify-content: center;
+  box-shadow: 0px 0px 6px 2px $box-shadow-color;
+  width:80%;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  color: #000;
+  &:hover {
+    transform: scale(1.03);
+    transition: 0.5s ease-out;
+  }
+  @media (min-width: $mediaTabletMin) {
+    width: 35%;
+    height: 550px;
+  }
+  @media (min-width: $mediaDesktopMin) {
+    width: 25%;
+  }
+  
+  .card-icons-container {
+    text-align: right;
+    width: 100%;
+    img {
+      width: 20px;
+      height: 20px;
+      background-color: $icon-background;
+      padding: 10px;
+      border-radius: 50%;
+      margin: 20px;
+      ;
+    }
+  }
+
+  img {
+    width: 15em;
+    height: 20em;
+  }
+
+  .stars-container {
+    @extend .flex-center-row;
+    gap: 7px;
+  }
+
+  .card-bottom-container {
+    @extend .flex-center-row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+    button {
+      @extend .button;
+      width: 150px;
+    }
+    margin-bottom: 50px;
+  }
+  }
+  }
+}

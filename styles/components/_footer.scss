@@ -1,0 +1,17 @@
+footer {
+  @extend .flex-center-column;
+  width: 100%;
+  background-color: $nav-background;
+  .locations-container,
+  .quick-links-container,
+  .contact-info-container
+  .follow-us-container {
+    @extend .flex-center-column;
+    justify-content: center;
+  }
+
+  .quick-links,
+  .follow-us-links {
+    @extend .flex-center-column;
+  }
+}

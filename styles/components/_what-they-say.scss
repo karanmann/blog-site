@@ -1,0 +1,75 @@
+.customer-review {
+  @extend .flex-center-column;
+  background-color: $background-color;
+  background-image: url(../assets/images/brooke-lark-08bOYnH_r_E-unsplash-2.jpg);
+  @extend .paralax-effect;
+  
+  .review-card-container {
+    @extend .flex-center-column;
+    justify-content: center;
+    @media (min-width: $mediaTabletMin) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media (min-width: $mediaDesktopMin) {
+    }
+    
+    .review-card {
+      @extend .flex-center-column;
+      justify-content: center;
+      background-color: $background-white;
+      box-shadow: 0px 0px 6px 2px $box-shadow-color;
+      width:80%;
+      border-radius: 5px;
+      margin: 20px;
+      padding: 60px 20px 20px 20px;
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.5s ease-out;
+        .top-container {
+          .avatar-image,
+          .quotes-image {
+            transform: scale(1.8);
+            transition: 0.5s ease-out;
+          }
+        }
+      }
+      @media (min-width: $mediaTabletMin) {
+        width: 35%;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      @media (min-width: $mediaDesktopMin) {
+        width: 25%;
+      }
+
+      .top-container {
+        @extend .flex-center-row;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 100%;
+        .avatar-image {
+          height:70px;
+          width: 70px;
+          border-radius: 50%;
+        }
+        .quotes-image {
+          height: 40px;
+          width: 40px;
+          opacity: 0.5;
+        }
+        
+        .review-card-top-center-div {
+          text-align: center;
+          .avatar-text {
+            font-size: 20px;
+          }
+          .star-container{
+            @extend .flex-center-row;
+            gap:5px;
+          }
+        }
+      }
+    }
+  }
+}

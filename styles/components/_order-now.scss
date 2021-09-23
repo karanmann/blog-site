@@ -1,0 +1,26 @@
+.order-form-container {
+  @extend .flex-center-column;
+  justify-content: center;
+  text-align: center;
+  color: $background-white;
+  background-image: url(../assets/images/basil-594168_1920.jpg);
+    @extend .paralax-effect;
+  .watch-container {
+    @media (max-width: $mediaDesktopMin) {
+      display: none;
+    }
+  }
+  .order-form{
+    text-align: center;
+    width: 100%;
+    @media (min-width: $mediaDesktopMin) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    input {
+      width: 60%;
+    }
+  }
+}

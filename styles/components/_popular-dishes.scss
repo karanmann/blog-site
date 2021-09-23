@@ -1,0 +1,75 @@
+.popular-dishes-container{
+  background-image: url(../assets/images/4685.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: $background-white;
+  @extend .flex-center-column;
+
+  .card-container-popular-dishes {
+    @extend .flex-center-column;
+    justify-content: center;
+
+    @media (min-width: $mediaTabletMin){
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .card-popular-dishes {
+      @extend .flex-center-column;
+      justify-content: center;
+      background-color: $background-white;
+      box-shadow: 0px 0px 6px 2px $box-shadow-color;
+      color:#000;
+      width:80%;
+      border-radius: 5px;
+      margin: 20px;
+      padding: 20px;
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.5s ease-out;
+      }
+      @media (min-width: $mediaTabletMin) {
+        width: 35%;
+      }
+      @media (min-width: $mediaDesktopMin) {
+        width: 25%;
+      }
+      
+      .card-icons-container {
+        @extend .flex-center-row;
+        justify-content: space-between;
+        width:90%;
+        margin: 10px;
+
+        .eye-icon,
+        .heart-icon {
+          height: 20px;
+          width: 20px;
+          background-color: $icon-background;
+          padding: 8px;
+          border-radius: 50%;
+        }
+      }
+
+      img {
+        height: 200px;
+        border-radius: 20px;
+      }
+
+      .stars-container {
+        @extend .flex-center-row;
+        gap: 7px;
+      }
+
+      .card-bottom-container {
+        @extend .flex-center-row;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        button {
+          @extend .button;
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+}
