@@ -5,6 +5,8 @@ nav {
 	background-color: $nav-background;
 	// position: fixed;
 	width: 100%;
+	background-image: url(../../assets/images/15595-NQFZ7L.jpg);
+  @extend .paralax-effect;
 
 	.nav-links {
 		@extend .flex-center-row;

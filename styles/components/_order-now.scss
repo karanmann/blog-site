@@ -4,12 +4,8 @@
   text-align: center;
   color: $background-white;
   background-image: url(../assets/images/basil-594168_1920.jpg);
-    @extend .paralax-effect;
-  .watch-container {
-    @media (max-width: $mediaDesktopMin) {
-      display: none;
-    }
-  }
+  @extend .paralax-effect;
+  
   .order-form{
     text-align: center;
     width: 100%;
@@ -22,5 +18,11 @@
     input {
       width: 60%;
     }
+
+    .watch-container {
+    @media (max-width: $mediaDesktopMin) {
+      display: none;
+    }
+  }
   }
 }

@@ -3,50 +3,74 @@
   @extend .paralax-effect;
   @extend .flex-center-column;
 
-  .recipe-list {
-    @extend .flex-center-row;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    .recipe-card {
+  .search-container {
+    form {
       @extend .flex-center-column;
-      justify-content:baseline;
-      box-shadow: 0px 0px 6px 2px $box-shadow-color;
-      width: 350px;
-      height: 550px;
-      margin: 12px;
-      background-color: whitesmoke;
-      padding: 20px;
 
-      .card-name{
-      word-wrap:normal;
-      text-align: center;
-      font-size: 20px;
+      div {
+        padding: 10px ;
+        input {
+          border: 0;
+          box-shadow: 0px 0px 6px 2px $box-shadow-color;
+          margin-left: 20px;
+          height: 20px;
+        }
+        #number-of-recipes {
+          width: 50px;
+          height: 20px;
+        }
       }
-
-      .card-image {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin: 20px 0;
-      }
-      .card-yield {
-        
-      }
-      .card-healthiness {
-        text-align: center;
-      }
-
-      .card-button,
-      #submit{
+    }
+      #submit {
+        margin-top: 20px;
         @extend .button
       }
+  }
+}
 
-      .allergens,
-      .source {
-        font-size: 12px;
-      }
+.recipe-list {
+  @extend .flex-center-row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .recipe-card {
+    @extend .flex-center-column;
+    justify-content:baseline;
+    box-shadow: 0px 0px 6px 2px $box-shadow-color;
+    width: 350px;
+    height: 550px;
+    margin: 12px;
+    background-color: whitesmoke;
+    padding: 20px;
+
+    .card-name{
+    word-wrap:normal;
+    text-align: center;
+    font-size: 20px;
+    }
+
+    .card-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+    .card-yield {
+      
+    }
+    .card-healthiness {
+      text-align: center;
+    }
+
+    .card-button {
+      @extend .button
+    }
+
+    .allergens,
+    .source {
+      font-size: 12px;
     }
   }
 }
+
 
