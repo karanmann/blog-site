@@ -1,9 +1,11 @@
 //NAVBAR
 
 nav {
-	height: 100px;
+	height: 80px;
+	background-color: $nav-background;
+	// position: fixed;
 	width: 100%;
-	transform: translate(0px, -80px);
+	
   @extend .paralax-effect;
 
 	.nav-links {
@@ -43,9 +45,8 @@ nav {
 			img {
 				height: 30px;
 				padding: 30px 20px;
-				transform: translate(0px, 0px);
 				&:hover {
-					transform: scale(1.2) translate(0, -10px);
+					transform: scale(1.2);
 					transition: .5s ease-in-out;
 				}
 			}
@@ -60,7 +61,7 @@ nav {
 		display: flex;
 		flex-direction: row;
 		@media (min-width: $mediaDesktopMin) {
-				display: none;
+					display: none;
 			}
 		.menu-toggle {
 			display: block;

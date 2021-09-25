@@ -1,24 +1,30 @@
-.hero-container {
+.hero-container { 
   @extend .flex-center-column;
   @extend .paralax-effect;
-  padding: 100px 70px 70px 70px;
-  background-image: url(../assets/images/wheat-1845835_1920.jpg);
-  height: 80vh;
-  width: auto;
+  background-image: url(../../assets/images/wheat-1845835_1920.jpg);
+  justify-content: center;
+  height: 100vh;
   
-  // box-shadow:0px 1px 1px grey;
-  background-color: $background-color;
-  @media (min-width: $mediaDesktopMin) {
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
 
-  div {
+  .hero-content {
+    width: 80%;
     text-align: center;
     margin-bottom: 3em;
-    img {
-      width: 20em;
-      height: 20em;
+    transform: translate(0px, -80px);
+    @extend .flex-center-column;
+
+    @media (min-width: $mediaDesktopMin) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    .hero-content-text {
+      word-break: break-all;
+    }
+  
+    .hero-content-image {
+      width: 15em;
+      height: 15em;
       border-radius: 50%;
       object-fit: cover;
       @media (min-width: $mediaDesktopMin) {
@@ -30,6 +36,7 @@
     button {
       @extend .button;
       font-weight: 600;
+      margin: 20px 0px;
     }
   }
 }

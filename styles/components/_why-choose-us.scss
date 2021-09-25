@@ -1,8 +1,8 @@
 .why-choose-us {
   @extend .flex-center-column;
   align-items: center;
-  background-color: $background-color;
-  background-image: url(../assets/images/romanesco-3493007_1920.jpg);
+  background-color: $background-white;
+  background-image: url(../../assets/images/romanesco-3493007_1920.jpg);
   @extend .paralax-effect;
 
   .banner-container {

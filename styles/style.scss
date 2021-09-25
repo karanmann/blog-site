@@ -9,13 +9,21 @@
 @import "./components/watch";
 @import "./components/search-recipes";
 @import "./components/footer";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+// font-family: 'Amatic SC', cursive;
 body {
+  scroll-behavior: smooth;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-family: "Avenir Next", "Avenir", sans-serif;
+  background-image: $background-white-paper;
+  background-repeat: repeat;
 
   main  {
 

@@ -16,7 +16,7 @@ const buildRecipeList = (json) => {
                 </a>
                 <p class="card-yield"><b>Yield -</b> ${recipeContainer.recipe.yield}</p>
                 <p class="card-healthiness"><b>Healthiness -</b> ${(recipeContainer.recipe.dietLabels).join(', ')}</p>
-                <a href="${recipeContainer.recipe.url}">
+                <a href="${recipeContainer.recipe.url}" target="_blank>
                   <button class="card-button">Recipe</button>
                 </a>
                 <p class="allergens"><b>Allergens - </b>${(recipeContainer.recipe.cautions).join(', ')}</p>

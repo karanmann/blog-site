@@ -1,8 +1,6 @@
 .popular-dishes-container{
-  background-image: url(../assets/images/4685.jpg);
-  background-size: cover;
   background-attachment: fixed;
-  color: $background-white;
+  color: #000;
   @extend .flex-center-column;
 
   .card-container-popular-dishes {

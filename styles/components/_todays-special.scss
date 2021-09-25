@@ -1,9 +1,9 @@
 .todays-special {
-@extend .flex-center-column;
-justify-content: center;
-background-image: url(../assets/images/cabbage-5337431_1920.jpg);
-@extend .paralax-effect;
-color: $background-white;
+  @extend .flex-center-column;
+  justify-content: center;
+  @extend .paralax-effect;
+  color: #000;
+
 
 .cards-container-todays-special {
   @extend .flex-center-column;
