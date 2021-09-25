@@ -102,7 +102,7 @@ nav .nav-links a {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-size: 20px;
+  font-size: 12px;
   list-style: none;
   padding: 10px 20px;
   color: #000;
@@ -131,7 +131,7 @@ nav .nav-links img:hover {
 }
 
 nav .nav-links .nav-navlink-icons img {
-  height: 30px;
+  height: 20px;
   padding: 30px 20px;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
@@ -171,7 +171,7 @@ nav .hamburger .menu-toggle {
   position: relative;
   top: 25px;
   left: 20px;
-  z-index: 1;
+  z-index: 10;
 }
 
 nav .hamburger .menu-toggle a {
@@ -312,8 +312,6 @@ nav img {
   width: 80%;
   text-align: center;
   margin-bottom: 3em;
-  -webkit-transform: translate(0px, -80px);
-          transform: translate(0px, -80px);
 }
 
 @media (min-width: 1260px) {
