@@ -1,15 +1,1 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="1378418749 1">
-<g id="path3611" filter="url(#filter0_f)">
-<path d="M21.5887 9.12054C17.7061 9.12054 14.2764 10.6527 11.3005 13.7126C5.60386 19.5699 5.36361 28.8614 10.5745 35.0105C10.44 34.9555 31.9595 57.0838 32.0142 57.0288C31.9595 57.0838 53.48 34.9555 53.4262 35.0105C58.6371 28.8614 58.3968 19.5699 52.7 13.7126C47.0076 7.85914 37.9808 7.32487 32.0003 12.6693C29.1433 10.1096 25.1409 9.12054 21.5889 9.12054H21.5887Z" fill="black" fill-opacity="0.39216"/>
-</g>
-<path id="rect2820" d="M21.241 7.1495C17.2285 7.1495 13.6845 8.6798 10.61 11.7356C4.72349 17.5866 4.47519 26.8656 9.85979 33.0086C9.72079 32.9526 31.9578 55.0546 32.0138 54.9996C31.9578 55.0546 54.1958 32.9526 54.1398 33.0086C59.5248 26.8656 59.2758 17.5866 53.3898 11.7356C47.5078 5.8892 38.1798 5.3556 31.9998 10.6936C29.0478 8.1369 24.9118 7.1491 21.2408 7.1491L21.241 7.1495Z" fill="#D92856"/>
-</g>
-<defs>
-<filter id="filter0_f" x="1.91858" y="4.05037" width="60.1635" height="57.8991" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="2.46028" result="effect1_foregroundBlur"/>
-</filter>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64"><g id="1378418749 1"><g id="path3611" filter="url(#filter0_f)"><path fill="#000" fill-opacity=".392" d="M21.5887 9.12054C17.7061 9.12054 14.2764 10.6527 11.3005 13.7126C5.60386 19.5699 5.36361 28.8614 10.5745 35.0105C10.44 34.9555 31.9595 57.0838 32.0142 57.0288C31.9595 57.0838 53.48 34.9555 53.4262 35.0105C58.6371 28.8614 58.3968 19.5699 52.7 13.7126C47.0076 7.85914 37.9808 7.32487 32.0003 12.6693C29.1433 10.1096 25.1409 9.12054 21.5889 9.12054H21.5887Z"/></g><path id="rect2820" fill="#D92856" d="M21.241 7.1495C17.2285 7.1495 13.6845 8.6798 10.61 11.7356C4.72349 17.5866 4.47519 26.8656 9.85979 33.0086C9.72079 32.9526 31.9578 55.0546 32.0138 54.9996C31.9578 55.0546 54.1958 32.9526 54.1398 33.0086C59.5248 26.8656 59.2758 17.5866 53.3898 11.7356C47.5078 5.8892 38.1798 5.3556 31.9998 10.6936C29.0478 8.1369 24.9118 7.1491 21.2408 7.1491L21.241 7.1495Z"/></g><defs><filter id="filter0_f" width="60.163" height="57.899" x="1.919" y="4.05" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/><feGaussianBlur result="effect1_foregroundBlur" stdDeviation="2.46"/></filter></defs></svg>
