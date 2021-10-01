@@ -20,6 +20,9 @@
 
     .hero-content-text {
       word-break: break-all;
+      @media (min-width: $mediaDesktopMin) {
+        margin: 100px;
+      }
     }
   
     .hero-content-image {

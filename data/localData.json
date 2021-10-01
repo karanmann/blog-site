@@ -33,22 +33,6 @@
         "long-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus asperiores excepturi sint! Officiis, corrupti.",
         "price":119,
         "star_rating":"⭐ ⭐ ⭐ ⭐ ⭐"
-      },
-      {
-        "name":"Dish 5",
-        "image_url":"../assets/food-images/Image05.jpeg",
-        "short_description": "Lorem, ipsum dolor.",
-        "long-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus asperiores excepturi sint! Officiis, corrupti.",
-        "price":99,
-        "star_rating":"⭐ ⭐ ⭐ ⭐"
-      },
-      {
-        "name":"Dish 6",
-        "image_url":"../assets/food-images/Image06.jpeg",
-        "short_description": "Lorem, ipsum dolor.",
-        "long-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus asperiores excepturi sint! Officiis, corrupti.",
-        "price":109,
-        "star_rating":"⭐ ⭐ ⭐ ⭐"
       }
     ],
 
@@ -84,22 +68,6 @@
         "short_description": "Lorem, ipsum dolor.",
         "long-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus asperiores excepturi sint! Officiis, corrupti.",
         "price":129,
-        "star_rating":"⭐ ⭐ ⭐ ⭐ ⭐"
-      },
-      {
-        "name":"Dish 5",
-        "image_url":"../assets/food-images/Image11.jpeg",
-        "short_description": "Lorem, ipsum dolor.",
-        "long-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus asperiores excepturi sint! Officiis, corrupti.",
-        "price":99,
-        "star_rating":"⭐ ⭐ ⭐ ⭐"
-      },
-      {
-        "name":"Dish 6",
-        "image_url":"../assets/food-images/Image12.png",
-        "short_description": "Lorem, ipsum dolor.",
-        "long-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus asperiores excepturi sint! Officiis, corrupti.",
-        "price":189,
         "star_rating":"⭐ ⭐ ⭐ ⭐ ⭐"
       }
     ],

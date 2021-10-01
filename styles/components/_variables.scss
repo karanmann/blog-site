@@ -12,7 +12,17 @@ $mediaTabletMax: 960px;
 $mediaTabletMin: 768px;
 $mediaMinWidth: 480px;
 
+
+  // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: 'Amatic SC', cursive;
+  // font-family: 'Merriweather', serif;
+  // font-family: "Avenir Next", "Avenir", sans-serif;
+  // font-family: 'Bonheur Royale', cursive;
+$handwritten-font: 'Bonheur Royale', cursive;
+$big-title: 'Merriweather', serif;
+
 $background-white-paper: url(../../assets/images/Bakgrund_Lin-ljus.jpg);
+
 
 .paralax-effect {
   background-size: cover;
@@ -31,18 +41,16 @@ $background-white-paper: url(../../assets/images/Bakgrund_Lin-ljus.jpg);
 }
 
 .button {
-  border: none;
-  color: whitesmoke;
-  padding:15px 20px;
-  border-radius: 10px;
-  background-color: $button-green;
+  
+  border:none;
+  background-color: #2980b9;
+  padding: 10px 15px;
+  color: #FFF;
   &:hover {
     gap: 2px;
     transform: scale(1.05);
     transition: 0.2s ease-out;
-    background-color: $button-green-hover;
-    border: 2px solid $button-green;
-    color: #000;
+    background-color: #409ad5;
   }
 }
 

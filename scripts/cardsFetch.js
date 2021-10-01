@@ -11,21 +11,18 @@ const buildPopularDishesCards = (json) => {
   json.popular_dishes.map((dishData) => {
     console.log(dishData);
     output += `
-        <div class="card-popular-dishes">
-          <div class="card-icons-container">
-            <img class="eye-icon" src="./assets/icons/dont-watch.svg" alt="watch-icon">
-            <img class="heart-icon" src="./assets/icons/heart-outline.svg" alt="heart-icon">
-          </div>
-          <img src=${dishData.image_url} alt="Food Image">
-          <p><b>${dishData.name}</b></p>
-          <div class="stars-container">
+        <figure class="popular-card">
+          <img class="popular-card-image"src=${dishData.image_url} alt="Dish Image"/>
+          <div class="add-to-fav"> <i class="ion-android-add"></i><span>Add to Favourite</span></div>
+          <figcaption>
+            <h2>${dishData.name}</h2>
             <p>${dishData.star_rating}</p>
-          </div>
-          <div class="card-bottom-container">
-            <p>Kr. ${dishData.price}</p>
-            <button>Add to Cart</button>
-          </div>
-        </div>   
+            <div class="price">
+              <h5>Kr. ${dishData.price}</h5> 
+              <button>ADD TO CART</button>
+            </div>
+          </figcaption><a href="#"></a>
+        </figure>   
               `;
     popularDishes.innerHTML = output;
   })
@@ -36,18 +33,19 @@ const buildTodaysSpecialCards = (json) => {
   json.todays_special.map((dishData) => {
     output += `
         <div class="card-todays-special">
-          <div class="card-icons-container">
-            <img src="./assets/icons/heart-outline.svg" alt="heart-icon">
-          </div>
-          <img src=${dishData.image_url} alt="Card Image">
+          <img class="todays-image-container" src=${dishData.image_url} alt="Card Image">
+          
           <div class="stars-container">
             <p>${dishData.star_rating}</p>
+            <div class="card-icons-container">
+              <img src="./assets/icons/heart.svg" alt="heart-icon">
+            </div>
           </div>
-          <p><b>${dishData.name}</b></p>
+          <h4>${dishData.name}</h4>
           <p>${dishData.short_description}</p>
           <div class="card-bottom-container">
-            <p>Kr. ${dishData.price}</p>
-            <button>Add to Cart</button>
+            <h3>Kr. ${dishData.price}</h3>
+            <button>ADD TO CART</button>
           </div>
         </div>`
     todaysSpecial.innerHTML = output;
@@ -62,15 +60,16 @@ const buildReviewCards = (json) => {
           <div class="top-container">
             <img class="avatar-image" src=${reviewData.avatar_image_url} alt="Image">
             <div class="review-card-top-center-div">
-              <p class="avatar-text">${reviewData.name}</p>
               <div class="star-container">
                 <p>${reviewData.star_rating}</p>
               </div>
+              <h5 class="avatar-text">${reviewData.name}</h5>
+              <p>${reviewData.location}</p>
             </div>
             <img class="quotes-image" src=${reviewData.quote_image} alt="closing-quotes-image">
           </div>
           <p>${reviewData.review}</p>
-          <p>Location: ${reviewData.location}</p>
+          
         </div>`;
     customerReviews.innerHTML = output;
   })

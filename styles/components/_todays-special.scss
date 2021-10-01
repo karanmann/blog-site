@@ -4,7 +4,6 @@
   @extend .paralax-effect;
   color: #000;
 
-
 .cards-container-todays-special {
   @extend .flex-center-column;
   justify-content: center;
@@ -14,62 +13,66 @@
   }
   
   .card-todays-special {
-  @extend .flex-center-column;
-  justify-content: center;
-  box-shadow: 0px 0px 6px 2px $box-shadow-color;
-  width:80%;
-  background-color: white;
-  border-radius: 5px;
-  margin: 20px;
-  padding: 20px;
-  color: #000;
-  &:hover {
-    transform: scale(1.03);
-    transition: 0.5s ease-out;
-  }
-  @media (min-width: $mediaTabletMin) {
-    width: 35%;
-    height: 550px;
-  }
-  @media (min-width: $mediaDesktopMin) {
-    width: 25%;
-  }
-  
-  .card-icons-container {
-    text-align: right;
-    width: 100%;
-    img {
-      width: 20px;
-      height: 20px;
-      background-color: $icon-background;
-      padding: 10px;
-      border-radius: 50%;
-      margin: 20px;
-      ;
+    @extend .flex-center-column;
+    justify-content: center;
+    box-shadow: 0px 0px 6px 2px $box-shadow-color;
+    width:80%;
+    background-color: white;
+    margin: 5%;
+    color: #000;
+    border-radius: 5px;
+    position: relative;
+    &:hover {
+      transform: scale(1.02);
+      transition: 0.5s ease-out;
     }
-  }
-
-  img {
-    width: 15em;
-    height: 20em;
-  }
-
-  .stars-container {
-    @extend .flex-center-row;
-    gap: 7px;
-  }
-
-  .card-bottom-container {
-    @extend .flex-center-row;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 50px;
-    button {
-      @extend .button;
-      width: 150px;
+    @media (min-width: $mediaTabletMin) {
+      width: 40%;
+      height: 50%;
+      margin: 15px;
     }
-    margin-bottom: 50px;
-  }
+    @media (min-width: $mediaDesktopMin) {
+      width: 20%;
+      height: 50%;
+    }
+    
+    .card-icons-container {
+      img {
+        width: 20px;
+        height: 20px;
+        background-color: #f1eded;
+        padding: 10px;
+        border-radius: 50%;
+        margin: 20px;
+        border: 2px solid black;
+      }
+    }
+
+    .todays-image-container {
+      object-fit:cover;
+      width: 100%;
+      height: 30%;
+    }
+    
+    .stars-container {
+      width: 100%;
+      @extend .flex-center-row;
+      justify-content: space-between;
+      p {
+        margin:  0 0 0 30px;
+      }
+    }
+
+    .card-bottom-container {
+      @extend .flex-center-row;
+      justify-content: space-around;
+      width: 100%;
+      button {
+        @extend .button;
+        width: 120px;
+      }
+      margin-bottom: 20px;
+    }
   }
   }
 }

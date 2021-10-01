@@ -2,7 +2,8 @@
   @extend .flex-center-column;
   align-items: center;
   background-color: $background-white;
-  background-image: url(../../assets/images/romanesco-3493007_1920.jpg);
+  background-image: url(../../assets/images/nwAlHa.jpeg);
+  background-repeat: repeat;
   @extend .paralax-effect;
 
   .banner-container {
@@ -37,7 +38,7 @@
           @extend .button;
           margin: 0 3%;
           font-size: 11px;
-          
+          width: 160px;
           img {
             padding-right: 4px;
           }
