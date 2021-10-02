@@ -6,9 +6,8 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,400;0,700;0,800;0,900;1,200;1,500;1,900&display=swap"
-    rel="stylesheet">
+  <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <title>🥘 FOODEX</title>
 </head>
 
@@ -205,18 +204,18 @@
     </section>
   </main>
   <footer>
-    <div class="footer-top-container">
-      <h4>Quick Links</h4>
-      <div class="quick-links">
-        <a href="#home">Home</a>
-        <a href="#dishes">Dishes</a>
-        <a href="#aboutus">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#review">Review</a>
-        <a href="#order">Order</a>
-      </div>
-    </div>
     <div class="footer-middle-container">
+      <div class="quick-link-container">
+        <h4>Quick Links</h4>
+        <div class="quick-links">
+          <a href="#home">Home</a>
+          <a href="#dishes">Dishes</a>
+          <a href="#aboutus">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#review">Review</a>
+          <a href="#order">Order</a>
+        </div>
+      </div>
       <div class="locations-container">
         <h4>Locations</h4>
         <div>
@@ -243,10 +242,22 @@
       <div class="follow-us-container">
         <h4>Follow Us</h4>
         <div class="follow-us-links">
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
+          <a href="#">
+            <img class="social-icon" src="./assets/icons/facebook.png" alt="">
+            Facebook
+          </a>
+          <a href="#">
+            <img class="social-icon" src="./assets/icons/twitter.png" alt="">
+            Twitter
+          </a>
+          <a href="#">
+            <img class="social-icon" src="./assets/icons/instagram.png" alt="">
+            Instagram
+          </a>
+          <a href="#">
+            <img class="social-icon" src="./assets/icons/linkedin.png" alt="">
+            LinkedIn
+          </a>
         </div>
       </div>
     </div>
@@ -255,6 +266,7 @@
   <script src="./scripts/clock.js"></script>
   <script src="./scripts/edamam.js"></script>
   <script src="./scripts/cardsFetch.js"></script>
+  <script src="./scripts/returnToTop.js"></script>
 </body>
 
 </html>

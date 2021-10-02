@@ -3,7 +3,7 @@
 nav {
 	height: 100px;
 	width: 100%;
-	transform: translate(0px, -80px);
+	transform: translate(0px, -40px);
   @extend .paralax-effect;
 	
 
@@ -41,8 +41,8 @@ nav {
 				background-color: #409ad5;
 			}
 			&:hover::after {
-    		width: 100%;
-    		transition: all 0.4s;
+				width: 100%;
+				transition: all 0.4s;
 			}
 		}
 

@@ -10,7 +10,7 @@
   background-attachment: fixed;
 }
 
-.flex-center-row, nav .nav-links, .why-choose-us .banner-container .banner-text-container .button-container, .why-choose-us .banner-container .banner-text-container .button-container .about-button, .todays-special .cards-container-todays-special .card-todays-special .stars-container, .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container, .customer-review .review-card-container .review-card .top-container, .customer-review .review-card-container .review-card .top-container .review-card-top-center-div .star-container, .recipe-list, footer .footer-top-container .quick-links, footer .footer-middle-container {
+.flex-center-row, nav .nav-links, .why-choose-us .banner-container .banner-text-container .button-container .about-button, .todays-special .cards-container-todays-special .card-todays-special .stars-container, .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container, .customer-review .review-card-container .review-card .top-container, .customer-review .review-card-container .review-card .top-container .review-card-top-center-div .star-container, .recipe-list, footer .footer-middle-container, footer .footer-middle-container .follow-us-container .follow-us-links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@
           align-items: center;
 }
 
-.flex-center-column, .hero-container, .hero-container .hero-content, .popular-dishes-container, .popular-dishes-container .card-container-popular-dishes, .why-choose-us, .why-choose-us .banner-container, .why-choose-us .banner-container .banner-text-container, .todays-special, .todays-special .cards-container-todays-special, .todays-special .cards-container-todays-special .card-todays-special, .customer-review, .customer-review .review-card-container, .customer-review .review-card-container .review-card, .order-form-container, .watch-container, .recipe-search, .recipe-search .search-container form, .recipe-list .recipe-card, footer, footer .footer-middle-container .follow-us-container .follow-us-links {
+.flex-center-column, .hero-container, .hero-container .hero-content, .popular-dishes-container, .popular-dishes-container .card-container-popular-dishes, .why-choose-us, .why-choose-us .banner-container, .why-choose-us .banner-container .banner-text-container, .why-choose-us .banner-container .banner-text-container .button-container, .todays-special, .todays-special .cards-container-todays-special, .todays-special .cards-container-todays-special .card-todays-special, .customer-review, .customer-review .review-card-container, .customer-review .review-card-container .review-card, .order-form-container, .watch-container, .recipe-search, .recipe-search .search-container form, .recipe-list .recipe-card, footer, footer .footer-middle-container .quick-link-container .quick-links, footer .footer-middle-container .follow-us-container .follow-us-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,8 +90,8 @@
 nav {
   height: 100px;
   width: 100%;
-  -webkit-transform: translate(0px, -80px);
-          transform: translate(0px, -80px);
+  -webkit-transform: translate(0px, -40px);
+          transform: translate(0px, -40px);
 }
 
 nav .nav-links {
@@ -326,7 +326,7 @@ nav img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 .hero-container .hero-content {
@@ -447,7 +447,7 @@ nav img {
 
 @media (min-width: 1260px) {
   .why-choose-us .banner-container .banner-text-container {
-    width: 50%;
+    width: 45%;
   }
 }
 
@@ -457,18 +457,29 @@ nav img {
           justify-content: space-evenly;
 }
 
-.why-choose-us .banner-container .banner-text-container .button-container .about-button {
-  margin: 0 3%;
-  font-size: 11px;
-  width: 160px;
+@media (min-width: 1260px) {
+  .why-choose-us .banner-container .banner-text-container .button-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
-.why-choose-us .banner-container .banner-text-container .button-container .about-button img {
-  padding-right: 4px;
+.why-choose-us .banner-container .banner-text-container .button-container .about-button {
+  margin: 3% 3%;
+  font-size: 11px;
+  width: 160px;
+  gap: 10px;
+}
+
+.why-choose-us .banner-container .banner-text-container .button-container .about-button .icon-image {
+  height: 30px;
+  width: 30px;
 }
 
 .why-choose-us .banner-container .banner-text-container .learn-more-button {
-  margin: 8% 0;
+  margin: 10px 0;
   font-size: 18px;
   font-weight: 600;
 }
@@ -818,33 +829,6 @@ footer .footer-bottom-container {
   text-align: center;
 }
 
-footer .footer-top-container .quick-links {
-  width: 100vw;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-footer .footer-top-container .quick-links a {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 10px 20px;
-  color: #000;
-  text-decoration: none;
-}
-
-footer .footer-top-container .quick-links a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  letter-spacing: 2px;
-}
-
 footer .footer-middle-container {
   text-transform: uppercase;
   -webkit-box-align: start;
@@ -856,6 +840,25 @@ footer .footer-middle-container {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+footer .footer-middle-container .quick-link-container .quick-links a {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  line-height: 10px;
+}
+
+footer .footer-middle-container .quick-link-container .quick-links a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  letter-spacing: 2px;
 }
 
 footer .footer-middle-container .locations-container div p {
@@ -870,6 +873,7 @@ footer .footer-middle-container .contact-info-container div p {
 }
 
 footer .footer-middle-container .follow-us-container .follow-us-links a {
+  width: 150px;
   text-align: center;
   font-size: 12px;
   font-weight: 700;
@@ -877,6 +881,11 @@ footer .footer-middle-container .follow-us-container .follow-us-links a {
   padding: 10px 20px;
   color: #000;
   text-decoration: none;
+  line-height: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
 }
 
 footer .footer-middle-container .follow-us-container .follow-us-links a:hover {
@@ -885,6 +894,11 @@ footer .footer-middle-container .follow-us-container .follow-us-links a:hover {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   letter-spacing: 2px;
+}
+
+footer .footer-middle-container .follow-us-container .follow-us-links a .social-icon {
+  height: 20px;
+  width: 20px;
 }
 
 footer .footer-bottom-container {
@@ -906,7 +920,7 @@ footer .footer-bottom-container {
   margin: 10px;
   min-width: 230px;
   max-width: 315px;
-  width: 100%;
+  width: 80%;
   background: #ffffff;
   text-align: left;
   color: #000000;

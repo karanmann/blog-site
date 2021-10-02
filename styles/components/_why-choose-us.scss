@@ -27,27 +27,31 @@
       width: 80%;
       margin: 5% 0;
       @media (min-width: $mediaDesktopMin) {
-        width: 50%;
+        width: 45%;
       }
       .button-container {
-        @extend .flex-center-row;
+        @extend .flex-center-column;
         justify-content: space-evenly;
-
+        @media (min-width: $mediaDesktopMin) {
+          flex-direction: row;
+        }
         .about-button {
           @extend .flex-center-row;
           @extend .button;
-          margin: 0 3%;
+          margin: 3% 3%;
           font-size: 11px;
           width: 160px;
-          img {
-            padding-right: 4px;
+          gap: 10px;
+          .icon-image {
+            height:30px;
+            width:30px;
           }
         }
       }
 
       .learn-more-button {
         @extend .button;
-        margin: 8% 0;
+        margin: 10px 0;
         font-size: 18px;
         font-weight: 600;
       }
