@@ -157,16 +157,21 @@
               <input type="text" name="username" size="15" maxlength="30" required />
             </div>
             <div>
-              <p>Your Order:</p>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
               <p>Date and time of delivery:</p>
               <input type="text" name="username" size="15" maxlength="30" required />
             </div>
+            
+          </form>
+        </div>
+        <div class="form-container">
+          <form action="">
+            <div>
+              <p>Your Order:</p>
+              <textarea name="" id="" cols="30" rows="5"></textarea>
+            </div>
             <div>
               <p>Additional Info:</p>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="" id="" cols="30" rows="5"></textarea>
             </div>
             <input class="button" type="button" value="Submit">
           </form>
@@ -195,7 +200,7 @@
             <label for="recipes" >Number of Recipes</label>
             <input id="number-of-recipes" type="number" required>
           </div>
-          <input id="submit" name="submit" type="submit" value="Search">
+          <input id="submit" name="submit" type="submit" value="SEARCH">
         </form>
       </div>
       <section class="recipe-list" id="recipeList">
@@ -228,13 +233,11 @@
       <div class="contact-info-container">
         <h4>Contact Info</h4>
         <div>
-          <p>Phone: +46 11231231431</p>
-          <p>Phone: +46 3243523423</p>
-          <p>john@doe.com</p>
-          <p>jane@doe.com</p>
+          <p><img class="social-icon" src="./assets/icons/phone-call.png" alt="">+46 11231231431, +46 3243523423</p>
+          <p><img class="social-icon" src="./assets/icons/email.png" alt="">john@doe.com, jane@doe.com</p>
           <div>
-            <p>sadsdasds street</p>
-            <p>23423423423</p>
+            <p><img class="social-icon" src="./assets/icons/home.png" alt="">sadsdasds street</p>
+            <p>19454 city</p>
             <p>sweden</p>
           </div>
         </div>
@@ -266,7 +269,8 @@
   <script src="./scripts/clock.js"></script>
   <script src="./scripts/edamam.js"></script>
   <script src="./scripts/cardsFetch.js"></script>
-  <script src="./scripts/returnToTop.js"></script>
+  <script src="./scripts/intersectionalObserver.js"></script>
+
 </body>
 
 </html>

@@ -12,7 +12,6 @@ $mediaTabletMax: 960px;
 $mediaTabletMin: 768px;
 $mediaMinWidth: 480px;
 
-
   // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   // font-family: 'Amatic SC', cursive;
   // font-family: 'Merriweather', serif;
@@ -46,6 +45,7 @@ $background-white-paper: url(../../assets/images/Bakgrund_Lin-ljus.jpg);
   background-color: #2980b9;
   padding: 10px 15px;
   color: #FFF;
+  cursor: pointer;
   &:hover {
     gap: 2px;
     transform: scale(1.05);
@@ -67,6 +67,7 @@ $background-white-paper: url(../../assets/images/Bakgrund_Lin-ljus.jpg);
 .icon-image {
   width: 20px;
   height: 20px;
+  
 };
 
 .large-image {

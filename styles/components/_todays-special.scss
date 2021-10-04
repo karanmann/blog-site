@@ -3,6 +3,7 @@
   justify-content: center;
   @extend .paralax-effect;
   color: #000;
+  
 
 .cards-container-todays-special {
   @extend .flex-center-column;
@@ -20,7 +21,6 @@
     background-color: white;
     margin: 5%;
     color: #000;
-    border-radius: 5px;
     position: relative;
     &:hover {
       transform: scale(1.02);
@@ -32,8 +32,8 @@
       margin: 15px;
     }
     @media (min-width: $mediaDesktopMin) {
-      width: 20%;
-      height: 50%;
+      width: 22%;
+      height: 20%;
     }
     
     .card-icons-container {
@@ -44,7 +44,13 @@
         padding: 10px;
         border-radius: 50%;
         margin: 20px;
-        border: 2px solid black;
+        border: 1px solid black;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: 0.5s ease-in-out;
+          border: 1px solid #D92856;
+        }
       }
     }
 

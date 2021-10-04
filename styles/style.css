@@ -10,7 +10,8 @@
   background-attachment: fixed;
 }
 
-.flex-center-row, nav .nav-links, .why-choose-us .banner-container .banner-text-container .button-container .about-button, .todays-special .cards-container-todays-special .card-todays-special .stars-container, .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container, .customer-review .review-card-container .review-card .top-container, .customer-review .review-card-container .review-card .top-container .review-card-top-center-div .star-container, .recipe-list, footer .footer-middle-container, footer .footer-middle-container .follow-us-container .follow-us-links a {
+.flex-center-row, nav .nav-links, .why-choose-us .banner-container .banner-text-container .button-container .about-button, .todays-special .cards-container-todays-special .card-todays-special .stars-container, .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container, .customer-review .review-card-container .review-card .top-container, .customer-review .review-card-container .review-card .top-container .review-card-top-center-div .star-container, .recipe-list, footer .footer-middle-container, footer .footer-middle-container .contact-info-container div div > p,
+footer .footer-middle-container .contact-info-container div p, footer .footer-middle-container .follow-us-container .follow-us-links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +42,7 @@
   background-color: #2980b9;
   padding: 10px 15px;
   color: #FFF;
+  cursor: pointer;
 }
 
 .button:hover, .hero-container .hero-content button:hover, .why-choose-us .banner-container .banner-text-container .button-container .about-button:hover, .why-choose-us .banner-container .banner-text-container .learn-more-button:hover, .todays-special .cards-container-todays-special .card-todays-special .card-bottom-container button:hover, .recipe-search .search-container #submit:hover, .recipe-list .recipe-card .card-button:hover {
@@ -272,7 +274,7 @@ nav .hamburger .menu-toggle span::nth-last-child(2) {
 
 nav .hamburger .menu {
   position: absolute;
-  width: 300px;
+  width: 305px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -518,7 +520,6 @@ nav img {
   background-color: white;
   margin: 5%;
   color: #000;
-  border-radius: 5px;
   position: relative;
 }
 
@@ -539,8 +540,8 @@ nav img {
 
 @media (min-width: 1260px) {
   .todays-special .cards-container-todays-special .card-todays-special {
-    width: 20%;
-    height: 50%;
+    width: 22%;
+    height: 20%;
   }
 }
 
@@ -551,7 +552,15 @@ nav img {
   padding: 10px;
   border-radius: 50%;
   margin: 20px;
-  border: 2px solid black;
+  border: 1px solid black;
+}
+
+.todays-special .cards-container-todays-special .card-todays-special .card-icons-container img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #D92856;
 }
 
 .todays-special .cards-container-todays-special .card-todays-special .todays-image-container {
@@ -585,7 +594,7 @@ nav img {
 
 .customer-review {
   background-color: whitesmoke;
-  background-image: url(../../assets/images/brooke-lark-08bOYnH_r_E-unsplash-2.jpg);
+  background-image: url(../../assets/images/kite.jpeg);
 }
 
 .customer-review .review-card-container {
@@ -690,6 +699,7 @@ nav img {
           justify-content: center;
   text-align: center;
   color: #000;
+  height: 80vh;
 }
 
 .order-form-container .order-form {
@@ -751,7 +761,8 @@ nav img {
 }
 
 .recipe-search {
-  background-image: url(../../assets/images/Recipe-Search-lukin.jpeg);
+  background-image: url(../../assets/images/687361.jpeg);
+  height: 80vh;
 }
 
 .recipe-search .search-container form div {
@@ -859,6 +870,7 @@ footer .footer-middle-container .quick-link-container .quick-links a:hover {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 footer .footer-middle-container .locations-container div p {
@@ -866,10 +878,23 @@ footer .footer-middle-container .locations-container div p {
   font-weight: 700;
 }
 
+footer .footer-middle-container .contact-info-container div .social-icon {
+  height: 20px;
+  width: 20px;
+}
+
 footer .footer-middle-container .contact-info-container div div > p,
 footer .footer-middle-container .contact-info-container div p {
   font-size: 12px;
   font-weight: 700;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-middle-container .contact-info-container div div > p img,
+footer .footer-middle-container .contact-info-container div p img {
+  margin-right: 10px;
 }
 
 footer .footer-middle-container .follow-us-container .follow-us-links a {

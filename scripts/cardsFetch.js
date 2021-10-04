@@ -12,7 +12,7 @@ const buildPopularDishesCards = (json) => {
     console.log(dishData);
     output += `
         <figure class="popular-card">
-          <img class="popular-card-image"src=${dishData.image_url} alt="Dish Image"/>
+          <img class="popular-card-image" src=${dishData.image_url} alt="Dish Image"/>
           <div class="add-to-fav"> <i class="ion-android-add"></i><span>Add to Favourite</span></div>
           <figcaption>
             <h2>${dishData.name}</h2>
@@ -60,11 +60,11 @@ const buildReviewCards = (json) => {
           <div class="top-container">
             <img class="avatar-image" src=${reviewData.avatar_image_url} alt="Image">
             <div class="review-card-top-center-div">
+              <h5 class="avatar-text">${reviewData.name}</h5>
+              <p>${reviewData.location}</p>
               <div class="star-container">
                 <p>${reviewData.star_rating}</p>
               </div>
-              <h5 class="avatar-text">${reviewData.name}</h5>
-              <p>${reviewData.location}</p>
             </div>
             <img class="quotes-image" src=${reviewData.quote_image} alt="closing-quotes-image">
           </div>
