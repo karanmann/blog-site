@@ -122,24 +122,5 @@
         "star_rating":"⭐ ⭐ ⭐",
         "quote_image": "./assets/icons/quotes.svg"
       }
-    ],
-    
-  "carouselImages": 
-    [
-      {"url": "./assets/food-images/Image01.jpeg"},
-      {"url": "./assets/food-images/Image02.jpeg"},
-      {"url": "./assets/food-images/Image03.jpeg"},
-      {"url": "./assets/food-images/Image04.jpeg"},
-      {"url": "./assets/food-images/Image05.jpeg"},
-      {"url": "./assets/food-images/Image06.jpeg"},
-      {"url": "./assets/food-images/Image07.jpeg"},
-      {"url": "./assets/food-images/Image08.jpeg"},
-      {"url": "./assets/food-images/Image09.jpeg"},
-      {"url": "./assets/food-images/Image10.jpeg"},
-      {"url": "./assets/food-images/Image11.jpeg"},
-      {"url": "./assets/food-images/Image12.jpeg"},
-      {"url": "./assets/food-images/Image13.jpeg"},
-      {"url": "./assets/food-images/Image14.jpeg"},
-      {"url": "./assets/food-images/Image15.jpeg"}
     ]
 }

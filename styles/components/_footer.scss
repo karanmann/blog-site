@@ -125,6 +125,13 @@ footer {
           font-size: 14px;
         }
       }
+      
+      button{
+        @extend .button;
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: 600;
+      }
     } 
   }
   .footer-bottom-container {

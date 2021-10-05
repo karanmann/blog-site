@@ -3,11 +3,11 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/092820c411.js"></script>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
   <link rel="shortcut icon" href="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg">
   <title>FOODEX</title>
 </head>
@@ -84,7 +84,9 @@
           <img class="hero-content-image" src="./assets/images/jimi-filipovski-0VRwj7rYnQI-unsplash.jpg" alt="">
         </div>
       </div>
-      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
     </section>
 
     <section id="dishes" class="popular-dishes-container">
@@ -100,7 +102,16 @@
       <h4>About Us</h4>
       <h2>WHY CHOOSE US?</h2>
       <div class="banner-container fade-in">
-        <img class="banner-image" src="./assets/images/martin-widenka-tkfRSPt-jdk-unsplash.jpg" alt="" />
+        <div class="banner-image-container">
+          <div class="container">
+            <button class="hero-button" onclick="backward()">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button class="hero-button" onclick="forward()">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
         <div class="banner-text-container">
           <h3>Best food in the country ...</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repudiandae et porro repellat autem quas vel
@@ -122,6 +133,7 @@
           <button class="learn-more-button">Learn More</button>
         </div>
       </div>
+      
     </section>
 
     <section id="menu" class="todays-special">
@@ -319,6 +331,8 @@
   <script src="./scripts/edamam.js"></script>
   <script src="./scripts/cardsFetch.js"></script>
   <script src="./scripts/intersectionalObserver.js"></script>
+  <script src="./scripts/slideShow.js"></script>
+  <script src="./scripts/scrollToTop.js"></script>
 
 </body>
 
