@@ -3,6 +3,7 @@
   color: #000;
   line-height: 10px;
   @extend .flex-center-column;
+  height: 100vh;
 
   .card-container-popular-dishes {
     @extend .flex-center-column;

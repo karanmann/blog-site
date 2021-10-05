@@ -143,38 +143,75 @@
       <h4>Order Now</h4>
       <h2>FREE & FAST DELIVERY</h2>
       <div class="order-form">
-        <div class="form-container">
+        <div class="form-container-left">
           <form action="">
-            <div>
-              <p>Your Name:</p>
-              <input type="text" name="username" size="15" maxlength="30" required />
+            <div class="form-name-container">
+              <p>Your Name: *</p>
+              <input 
+                type="text" 
+                name="username" 
+                size="60" 
+                maxlength="30" 
+                value="Enter your name..."
+                required 
+              />
             </div>
-            <div>
-              <p>Number:</p>
-              <input type="number" name="username" size="15" maxlength="30" required />
+            <div class="form-number-container">
+              <p>Phone Number: *</p>
+              <input 
+                type="number" 
+                name="username" 
+                size="40" 
+                maxlength="30" 
+                value="070 000 0000"
+                required
+              />
             </div>
-            <div>
-              <p>Address:</p>
-              <input type="text" name="username" size="15" maxlength="30" required />
+            <div class="form-address-container">
+              <p>Address: *</p>
+              <input 
+                type="text" 
+                name="username" 
+                size="60" 
+                maxlength="60" 
+                value="Delivery address..."
+                required 
+              />
             </div>
-            <div>
-              <p>Date and time of delivery:</p>
-              <input type="text" name="username" size="15" maxlength="30" required />
+            <div class="form-date-container">
+              <p>Date of delivery: *</p>
+              <input 
+                type="date" 
+                name="username" 
+                size="30" 
+                maxlength="30" 
+                required 
+              />
             </div>
-            
+            <div class="form-time-container">
+              <p>Time of delivery: *</p>
+              <input 
+                type="time" 
+                name="username" 
+                size="30" 
+                maxlength="30" 
+                required 
+              />
+            </div>
           </form>
         </div>
-        <div class="form-container">
+        <div class="form-container-center">
           <form action="">
             <div>
-              <p>Your Order:</p>
-              <textarea name="" id="" cols="30" rows="5"></textarea>
+              <p>Your Order: *</p>
+              <textarea name="" id="" cols="30" rows="9"></textarea>
             </div>
             <div>
               <p>Additional Info:</p>
-              <textarea name="" id="" cols="30" rows="5"></textarea>
+              <textarea name="" id="" cols="30" rows="9"></textarea>
             </div>
-            <input class="button" type="button" value="Submit">
+            <button class="button form-button">Submit</button>
+            <p>All fields marked with * are mandatory</p>
           </form>
         </div>
         <div class="watch-container">

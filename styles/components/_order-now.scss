@@ -6,16 +6,33 @@
   @extend .paralax-effect;
 
   .order-form{
-    text-align: center;
+    text-align: left;
     width: 100%;
+
     @media (min-width: $mediaDesktopMin) {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly;
     }
-    input {
-      width: 60%;
+    
+    div > input,
+    div > textarea {
+      border: none;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid grey;
+      font-size: 14px;
+    }
+    div > p {
+      font-weight: 500;
+    }
+
+    .form-button {
+        margin-top: 40px;
+        padding: 20px 35px;
+        font-size: 16px;
+        font-weight: 500;
     }
 
     .watch-container {

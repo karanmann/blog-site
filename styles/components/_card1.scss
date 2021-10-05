@@ -4,7 +4,6 @@
 }
 
 .popular-card {
-  font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -38,7 +37,7 @@
   opacity: 0;
   background-color: #409ad5;
   transform: rotateX(-90deg);
-  transform-origin: 100% 0;
+  transform-origin: 10% 0;
 }
 
 .popular-card .add-to-fav i {
