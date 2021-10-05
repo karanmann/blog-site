@@ -9,7 +9,6 @@ const customerReviews = document.getElementById("customer-reviews")
 const buildPopularDishesCards = (json) => {
   let output = ""
   json.popular_dishes.map((dishData) => {
-    console.log(dishData);
     output += `
         <figure class="popular-card">
           <img class="popular-card-image"src=${dishData.image_url} alt="Dish Image"/>

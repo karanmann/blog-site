@@ -113,6 +113,20 @@ footer {
       }
     }
   }
+  .sub-container {
+    form {
+      p {
+        font-weight: 700;
+        input {
+          border: none;
+          padding: 10px 20px;
+          border-radius: 10px;
+          border: 2px solid grey;
+          font-size: 14px;
+        }
+      }
+    } 
+  }
   .footer-bottom-container {
     font-size: 15;
     font-weight: 700;

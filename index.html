@@ -41,8 +41,8 @@
               <a href="#order" class="link-container" rel="noopener noreferrer">
                 <li class="custom-underline">Order</li>
               </a>
-              <a href="#" >
-                <li>FAQ</li>
+              <a href="#recipe-search" class="link-container" rel="noopener noreferrer">
+                <li class="custom-underline">Recipes</li>
               </a>
               <div class="nav-navlink-icons-dropdown">
                 <img src="./assets/icons/2072119491582004497.svg" alt="">
@@ -62,6 +62,8 @@
           <a href="#menu" rel="noopener noreferrer">Menu</a>
           <a href="#review" rel="noopener noreferrer">Review</a>
           <a href="#order" rel="noopener noreferrer">Order</a>
+          <a href="#recipe-search" rel="noopener noreferrer">Recipes</a>
+
           <div class="nav-navlink-icons">
             <img src="./assets/icons/2072119491582004497.svg" alt="">
             <img src="./assets/icons/9468673611582004493.svg" alt="">
@@ -163,7 +165,6 @@
                 name="username" 
                 size="40" 
                 maxlength="30" 
-                value="070 000 0000"
                 required
               />
             </div>
@@ -204,14 +205,14 @@
           <form action="">
             <div>
               <p>Your Order: *</p>
-              <textarea name="" id="" cols="30" rows="9"></textarea>
+              <textarea name="" id="" cols="30" rows="8"></textarea>
             </div>
             <div>
               <p>Additional Info:</p>
-              <textarea name="" id="" cols="30" rows="9"></textarea>
+              <textarea name="" id="" cols="30" rows="8"></textarea>
             </div>
             <button class="button form-button">Submit</button>
-            <p>All fields marked with * are mandatory</p>
+            
           </form>
         </div>
         <div class="watch-container">
@@ -219,8 +220,9 @@
           <div id="date"></div>
         </div>
       </div>
+      <p>All fields marked with * are mandatory</p>
     </section>
-    <section class="recipe-search">
+    <section id="recipe-search" class="recipe-search">
       <h4>Dont feel like ordering</h4>
       <h2>INSPIRATIONS AND RECIPES</h2>
       <br/>
@@ -251,12 +253,14 @@
       <div class="quick-link-container">
         <h3>Quick Links</h3>
         <div class="quick-links">
-          <a href="#home">Home</a>
-          <a href="#dishes">Dishes</a>
-          <a href="#aboutus">About</a>
-          <a href="#menu">Menu</a>
-          <a href="#review">Review</a>
-          <a href="#order">Order</a>
+          <a href="#home" rel="noopener noreferrer">Home</a>
+          <a href="#dishes" rel="noopener noreferrer">Dishes</a>
+          <a href="#aboutus" rel="noopener noreferrer">About</a>
+          <a href="#menu" rel="noopener noreferrer">Menu</a>
+          <a href="#review" rel="noopener noreferrer">Review</a>
+          <a href="#order" rel="noopener noreferrer">Order</a>
+          <a href="#recipe-search" rel="noopener noreferrer">Recipes</a>
+
         </div>
       </div>
       <div class="locations-container">
@@ -309,7 +313,7 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-    <p class="footer-bottom-container">Copyright Karan Mann as part of Hyper Island Project</p>
+    <p class="footer-bottom-container"> <    Copyright Karan Mann as part of Hyper Island Project    / > </p>
   </footer>
   <script src="./scripts/clock.js"></script>
   <script src="./scripts/edamam.js"></script>
