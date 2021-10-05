@@ -1,8 +1,8 @@
 .recipe-search {
   background-image: url(../../assets/images/687361.jpeg);
+  color: #ffff;
   @extend .paralax-effect;
   @extend .flex-center-column;
-  height: 80vh;
   .search-container {
     form {
       @extend .flex-center-column;
@@ -40,6 +40,7 @@
     width: 350px;
     height: 550px;
     margin: 12px;
+    color:black;
     background-color: whitesmoke;
     padding: 20px;
 
@@ -61,9 +62,13 @@
     .card-healthiness {
       text-align: center;
     }
+    .card-button-container {
+      
 
-    .card-button {
-      @extend .button
+      .card-button {
+        @extend .button;
+        text-decoration: none;
+      }
     }
 
     .allergens,

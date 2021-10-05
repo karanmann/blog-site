@@ -4,7 +4,6 @@
   text-align: center;
   color: #000;
   @extend .paralax-effect;
-  height: 80vh;
 
   .order-form{
     text-align: center;
@@ -20,9 +19,9 @@
     }
 
     .watch-container {
-    @media (max-width: $mediaDesktopMin) {
-      display: none;
+      @media (max-width: $mediaDesktopMin) {
+        display: none;
+      }
     }
-  }
   }
 }

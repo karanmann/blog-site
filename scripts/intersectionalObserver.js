@@ -1,19 +1,19 @@
-const sections = document.querySelectorAll("section");
+const faders = document.querySelectorAll(".fade-in");
 
-const options = {
-  root: null, //it is the viewports
-  threshold: 0,
-  rootMargin: "-150px"
+const appearOptions = {
+  threshold: 1,
+  rootMargin: "300px 0px 300px 0px"
 };
 
-const observer = new IntersectionObserver((entries, ovserver) => {
+const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
   entries.forEach(entry => {
     if(!entry.isIntersecting) {
       return;
+    } else {
+    entry.target.classList.add("appear");
+    appearOnScroll.unobserve(entry.target);
     }
-    console.log(entry.target);
-    entry.target.classList.toggle("inverse")   // Used Kevin Powels Code
-  })
-}, options)
+  });
+}, appearOptions);
 
-sections.forEach(section => observer.observe(section))
+faders.forEach(fader => appearOnScroll.observe(fader));
