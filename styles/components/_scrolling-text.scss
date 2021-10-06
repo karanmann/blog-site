@@ -1,12 +1,18 @@
 .scrolling-text {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   transform: translatex(-30%);
   line-break: auto;
   margin: 20px 0px;
+  transform: translate(-18%, 10%);
 
   @media (min-width: $mediaTabletMin) {
-    font-size: 40px;
+    font-size: 30px;
+    transform: translate(-16%, 0%);
+  }
+
+  @media (min-width: $mediaTabletMin) {
+    transform: translate(-18%, 0%);
   }
 
   p {
@@ -16,8 +22,11 @@
   
     .word {
       position: absolute;
-      width: 100px;
+      width: 100%;
       opacity: 0;
+      overflow: hidden;
+      font-weight: 900;
+      flex-wrap: wrap;
       
       @media (min-width: $mediaTabletMin) {
         width:200px;

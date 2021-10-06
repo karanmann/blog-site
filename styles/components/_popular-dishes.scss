@@ -16,24 +16,41 @@
       position: relative;
       overflow: hidden;
       margin: 10px;
+      height: 60%;
       width: 80%;
       background: #ffffff;
-      text-align: left;
+      text-align: center;
       color: #000000;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
       font-size: 16px;
       transform: translateZ(0);
       perspective: 20em;
+
       @media (min-width: $mediaTabletMin) {
-        width: 40%;
+        width: 35%;
       }
+
       @media (min-width: $mediaDesktopMin) {
         width: 20%;
       }
+
+      &:hover {
+        box-shadow: 0 0 9px rgba(0, 0, 0, 1);
+      }
     }
+    h5 {
+      font-size: 20px;
+    }
+
+    h6 {
+      font-size: 16px;
+      margin: 10px 0px;
+    } 
+
 
     .popular-card img {
       max-width: 100%;
+      object-fit: cover;
       vertical-align: top;
       position: relative;
     }
@@ -119,10 +136,7 @@
     }
 
     button {
-      border:none;
-      background-color: #2980b9;
-      padding: 10px 15px;
-      color: #FFF;
+      @extend .button;
     }
 
     @media (min-width: $mediaTabletMin){

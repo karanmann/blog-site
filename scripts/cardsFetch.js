@@ -18,16 +18,16 @@ const buildPopularDishesCards = (json) => {
   json.popular_dishes.map((dishData) => {
     output += `
         <figure class="popular-card">
-          <img class="popular-card-image"src=${dishData.image_url} alt="Dish Image"/>
+          <img class="popular-card-image" src=${dishData.image_url} alt="Dish Image"/>
           <div class="add-to-fav"> 
             <i class="ion-android-add"></i>
             <span>Add to Favourite</span>
           </div>
           <figcaption>
-            <h2>${dishData.name}</h2>
+            <h5>${dishData.name}</h5>
             <p>${dishData.star_rating}</p>
             <div class="price">
-              <h5>Kr. ${dishData.price}</h5> 
+              <h6>Kr. ${dishData.price}</h6> 
               <button>ADD TO CART</button>
             </div>
           </figcaption><a href="#"></a>

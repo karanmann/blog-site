@@ -105,22 +105,6 @@
         "location":"Göteborg",
         "star_rating":"⭐ ⭐ ⭐ ⭐ ⭐",
         "quote_image": "./assets/icons/quotes.svg"
-      },
-      {
-        "name":"Jane Doe",
-        "avatar_image_url":"./assets/users/prince-akachi-J1OScm_uHUQ-unsplash.jpg",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus asperiores excepturi sint! Officiis, corrupti.",
-        "location":"Uppsala",
-        "star_rating":"⭐ ⭐ ⭐ ⭐",
-        "quote_image": "./assets/icons/quotes.svg"
-      },
-      {
-        "name":"John Doe",
-        "avatar_image_url":"./assets/users/robert-godwin-cdksyTqEXzo-unsplash.jpg",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus asperiores excepturi sint! Officiis, corrupti.",
-        "location":"Stockholm",
-        "star_rating":"⭐ ⭐ ⭐",
-        "quote_image": "./assets/icons/quotes.svg"
       }
     ]
 }
