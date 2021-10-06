@@ -44,7 +44,49 @@ $background-white-paper: url(../../assets/images/Bakgrund_Lin-ljus.jpg);
     transition: 0.2s ease-out;
     background-color: #409ad5;
   }
+//   cursor:pointer;
+//   position:relative;
+//   padding:10px 20px;
+//   background-color: #2980b9;
+//   color: $background-white;
+//   border-top-right-radius:10px;
+//   border-bottom-left-radius:10px;
+//   transition:all 1s;
+
+//   &:after,
+//   &:before{
+//     content:" ";
+//     width:10px;
+//     height:10px;
+//     position:absolute;
+//     border :0px solid $box-shadow-color;
+//     transition:all 1s;
+//     }
+
+//   &:after{
+//     top:-2px;
+//     left:-2px;
+//     border-top:4px solid $box-shadow-color;
+//     border-left:4px solid $box-shadow-color;
+//   }
+
+//   &:before{
+//     bottom:-2px;
+//     right:-2px;
+//     border-bottom:4px solid $box-shadow-color;
+//     border-right:4px solid $box-shadow-color;
+//   }
+//   &:hover{
+//     border-top-right-radius:0px;
+//     border-bottom-left-radius:0px;
+//     background-color: #409ad5;
+//     &:before,&:after{
+//       width:100%;
+//       height:100%;
+//     }
+//   }
 }
+
 
 .ul-row {
   display: flex;

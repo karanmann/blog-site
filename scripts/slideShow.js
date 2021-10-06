@@ -33,3 +33,5 @@ function backward(){
   };
   container.style.backgroundImage = `url(${image[index]})`;
 };
+
+setInterval(forward, 3000);

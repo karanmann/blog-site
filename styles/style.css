@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 .paralax-effect, nav, .hero-container, .why-choose-us, .todays-special, .customer-review, .order-form-container, .recipe-search, footer {
   background-size: cover;
   background-attachment: fixed;
@@ -97,8 +98,8 @@ footer .footer-middle-container .contact-info-container div p, footer .footer-mi
 nav {
   height: 100px;
   width: 100%;
-  -webkit-transform: translate(0px, 20px);
-          transform: translate(0px, 20px);
+  -webkit-transform: translate(0px, 10px);
+          transform: translate(0px, 10px);
 }
 
 nav .nav-links {
@@ -144,18 +145,25 @@ nav .nav-links a:hover::after {
   transition: all 0.4s;
 }
 
-nav .nav-links img {
-  height: 50px;
-  width: 50px;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: -webkit-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
-  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+nav .nav-links .logo-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #668ad8;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #668ad8;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
-nav .nav-links img:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+nav .nav-links .logo-button:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 nav .nav-links .nav-navlink-icons img {
@@ -321,11 +329,22 @@ nav .nav-navlink-icons-dropdown {
   left: 50px;
 }
 
-nav img {
-  height: 50px;
-  width: 50px;
-  padding-top: 12px;
-  padding-left: 30px;
+nav .logo-image {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: relative;
+  left: 30px;
+}
+
+nav .logo-image:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 .hero-container {
@@ -354,8 +373,81 @@ nav img {
   }
 }
 
-.hero-container .hero-content .hero-content-text {
-  word-break: break-all;
+.hero-container .hero-content .hero-content-text .text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  width: 450px;
+  left: 50%;
+  margin-left: -225px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.hero-container .hero-content .hero-content-text p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.hero-container .hero-content .hero-content-text .word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.hero-container .hero-content .hero-content-text .letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.hero-container .hero-content .hero-content-text .letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hero-container .hero-content .hero-content-text .letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.hero-container .hero-content .hero-content-text .letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hero-container .hero-content .hero-content-text .wisteria {
+  color: #8e44ad;
+}
+
+.hero-container .hero-content .hero-content-text .belize {
+  color: #2980b9;
+}
+
+.hero-container .hero-content .hero-content-text .pomegranate {
+  color: #c0392b;
+}
+
+.hero-container .hero-content .hero-content-text .green {
+  color: #16a085;
+}
+
+.hero-container .hero-content .hero-content-text .midnight {
+  color: #2c3e50;
 }
 
 @media (min-width: 1260px) {
@@ -943,6 +1035,13 @@ nav img {
           justify-content: center;
   -webkit-box-shadow: inset 0 4px 95px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0 4px 95px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.watch-container:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 #time {
@@ -1030,6 +1129,86 @@ nav img {
 .recipe-list .recipe-card .allergens,
 .recipe-list .recipe-card .source {
   font-size: 12px;
+}
+
+.scrolling-text {
+  font-size: 20px;
+  text-align: center;
+  -webkit-transform: translatex(-30%);
+          transform: translatex(-30%);
+  line-break: auto;
+  margin: 20px 0px;
+}
+
+@media (min-width: 768px) {
+  .scrolling-text {
+    font-size: 40px;
+  }
+}
+
+.scrolling-text p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.scrolling-text p .word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
 }
 
 footer {

@@ -3,9 +3,8 @@
 nav {
 	height: 100px;
 	width: 100%;
-	transform: translate(0px, 20px);
+	transform: translate(0px, 10px);
   @extend .paralax-effect;
-	
 
 	.nav-links {
 		@extend .flex-center-row;
@@ -47,13 +46,22 @@ nav {
 			}
 		}
 
-		img {
-			height:50px;
-			width:50px;
-			transition: transform .8s ease-in-out;
+		.logo-button{
+			display: inline-block;
+			text-decoration: none;
+			color: #668ad8;
+			width: 120px;
+			height: 120px;
+			line-height: 120px;
+			border-radius: 50%;
+			border: double 4px #668ad8;
+			text-align: center;
+			vertical-align: middle;
+			overflow: hidden;
+			transition: .6s;
 
-			&:hover {
-				transform: rotate(360deg) ;
+			&:hover{
+				transform: rotateY(360deg);
 			}
 		}
 
@@ -70,8 +78,8 @@ nav {
 		}
 
 		@media (max-width: $mediaDesktopMin) {
-				display: none;
-			}
+			display: none;
+		}
 	}
 
 	.hamburger {
@@ -192,10 +200,18 @@ nav {
 		left: 50px;
 	}
 
-	img {
-		height:50px;
-		width:50px;
-		padding-top:12px;
-		padding-left: 30px;
-	}
+	.logo-image{
+			display: inline-block;
+			width: 60px;
+			height: 60px;
+			text-align: center;
+			vertical-align: middle;
+			overflow: hidden;
+			transition: 1s;
+			position: relative;
+			left:30px;
+			&:hover{
+				transform: rotateY(360deg);
+			}
+		}
 }
