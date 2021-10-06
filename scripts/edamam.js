@@ -42,7 +42,6 @@ const buildRecipeList = (json) => {
   });
 };
 
-// fetchEdamamData();
 
 
 

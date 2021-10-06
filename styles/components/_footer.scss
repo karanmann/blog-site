@@ -1,13 +1,14 @@
 footer {
   @extend .flex-center-column;
-  // background-color: $nav-background;
   @extend .paralax-effect;
   font-family: 'Poppins', sans-serif;
+
   .footer-top-container,
   .footer-middle-container,
   .footer-bottom-container {
     text-align: center;
   }
+
   .sub-container {
       @extend .flex-center-column;
       .sub-title {
@@ -113,6 +114,7 @@ footer {
       }
     }
   }
+
   .sub-container {
     form {
       p {
@@ -134,6 +136,7 @@ footer {
       }
     } 
   }
+
   .footer-bottom-container {
     font-size: 15;
     font-weight: 700;

@@ -1,370 +1,368 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://use.fontawesome.com/092820c411.js"></script>
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="shortcut icon" href="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg">
-  <title>FOODEX</title>
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg">
+    <title>FOODEX</title>
+  </head>
 
-<body>
-  <main>
-    <section id="home" class="hero-container">
-      <nav role="navigation">
-        <div class="hamburger">
-          <div class="menu-toggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="menu">
-              <a href="#home" rel="noopener noreferrer">
-                <li>Home</li>
-              </a>
-              <a href="#dishes" rel="noopener noreferrer">
-                <li>Dishes</li>
-              </a>
-              <a href="#aboutus" rel="noopener noreferrer">
-                <li>About Us</li>
-              </a>
-              <a href="#menu" rel="noopener noreferrer">
-                <li>Menu</li>
-              </a>
-              <a href="#review" rel="noopener noreferrer">
-                <li>Review</li>
-              </a>
-              <a href="#order" class="link-container" rel="noopener noreferrer">
-                <li class="custom-underline">Order</li>
-              </a>
-              <a href="#recipe-search" class="link-container" rel="noopener noreferrer">
-                <li class="custom-underline">Recipes</li>
-              </a>
-              <div class="nav-navlink-icons-dropdown">
-                <img src="./assets/icons/2072119491582004497.svg" alt="search">
-                <img src="./assets/icons/9468673611582004493.svg" alt="favourites">
-                <img src="./assets/icons/7524495561543238919.svg" alt="shopping basket">
+  <body>
+
+    <main>
+      <section id="home" class="hero-container">
+        <nav role="navigation">
+          <div class="hamburger">
+            <div class="menu-toggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="menu">
+                <a href="#home" rel="noopener noreferrer">
+                  <li>Home</li>
+                </a>
+                <a href="#dishes" rel="noopener noreferrer">
+                  <li>Dishes</li>
+                </a>
+                <a href="#aboutus" rel="noopener noreferrer">
+                  <li>About Us</li>
+                </a>
+                <a href="#menu" rel="noopener noreferrer">
+                  <li>Menu</li>
+                </a>
+                <a href="#review" rel="noopener noreferrer">
+                  <li>Review</li>
+                </a>
+                <a href="#order" class="link-container" rel="noopener noreferrer">
+                  <li class="custom-underline">Order</li>
+                </a>
+                <a href="#recipe-search" class="link-container" rel="noopener noreferrer">
+                  <li class="custom-underline">Recipes</li>
+                </a>
+                <div class="nav-navlink-icons-dropdown">
+                  <img src="./assets/icons/2072119491582004497.svg" alt="search">
+                  <img src="./assets/icons/9468673611582004493.svg" alt="favourites">
+                  <img src="./assets/icons/7524495561543238919.svg" alt="shopping basket">
+                </div>
+              </ul>
+            </div>
+            <img class="logo-image" src="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg" alt="">
+          </div>
+          
+          <div class="nav-links">
+            <img class="logo-image" src="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg" alt="">
+            <a href="#home" rel="noopener noreferrer">Home</a>
+            <a href="#dishes" rel="noopener noreferrer">Dishes</a>
+            <a href="#aboutus" rel="noopener noreferrer">About</a>
+            <a href="#menu" rel="noopener noreferrer">Menu</a>
+            <a href="#review" rel="noopener noreferrer">Review</a>
+            <a href="#order" rel="noopener noreferrer">Order</a>
+            <a href="#recipe-search" rel="noopener noreferrer">Recipes</a>
+
+            <div class="nav-navlink-icons">
+              <img src="./assets/icons/2072119491582004497.svg" alt="seach">
+              <img src="./assets/icons/9468673611582004493.svg" alt="favourite">
+              <img src="./assets/icons/7524495561543238919.svg" alt="shopping basket">
+            </div>
+
+          </div>
+        </nav>
+        <div class="hero-content fade-in">
+          <div class="hero-content-text">
+            <h4>Our Special Dishes</h4>
+            <h2>FRIED CHICKEN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores provident quos nam eveniet laudantium soluta
+              cum, ratione sequi sint labore?</p>
+            <button>ORDER NOW</button>
+          </div>
+          <div>
+            <img class="hero-content-image" src="./assets/images/jimi-filipovski-0VRwj7rYnQI-unsplash.jpg" alt="plated food">
+          </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+      </section>
+
+      <section id="dishes" class="popular-dishes-container">
+        <h4>Our Dishes</h4>
+        <h2>POPULAR DISHES</h2>
+        <div id="popular-dishes" class="card-container-popular-dishes">
+            <!--CODE INJECTED FROM JAVASCRIPT, with the Popular Dishes Cards and images-->
+        </div>
+      </section>
+
+      <section id="aboutus" class="why-choose-us">
+        <h4>About Us</h4>
+        <h2>WHY CHOOSE US?</h2>
+        <div class="banner-container fade-in">
+          <div class="banner-image-container">
+            <div class="container">
+              <button class="hero-button" onclick="backward()">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              <button class="hero-button" onclick="forward()">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="banner-text-container">
+            <h3>Best food in the country ...</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repudiandae et porro repellat autem quas vel
+              mollitia illo, est ex.</p>
+            <div class="button-container">
+              <button class="about-button">
+                <img class="icon-image" src="./assets/icons/delivery.svg" alt="delivery">
+                <p>Free Delivery</p>
+              </button>
+              <button class="about-button">
+                <img class="icon-image" src="./assets/icons/money.svg" alt="dollar">
+                <p>Easy Payment</p>
+              </button>
+              <button class="about-button">
+                <img class="icon-image" src="./assets/icons/service.svg" alt="customer care">
+                <p>24x7 Service</p>
+              </button>
+            </div>
+            <button class="learn-more-button">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="todays-special">
+        <h4>Our Menu</h4>
+        <h2>TODAYS SPECIAL</h2>
+        <div id="todays-special" class="cards-container-todays-special">
+          <!--CODE INJECTED FROM JAVASCRIPT, with the Todays Special Cards and images-->
+        </div>
+      </section>
+
+      <section id="review" class="customer-review">
+        <h4>Customer Reviews</h4>
+        <h2>WHAT THEY SAY ...</h2>
+        <div id="customer-reviews" class="review-card-container fade-in">
+          <!--CODE INJECTED FROM JAVASCRIPT, with the review Cards and images-->
+        </div>
+      </section>
+
+      <section id="order" class="order-form-container">
+        <h4>Order Now</h4>
+        <h2>FREE & FAST DELIVERY</h2>
+        <div class="order-form">
+          <div class="form-container-left">
+            <form action="">
+              <div class="form-name-container">
+                <p>Your Name: *</p>
+                <input 
+                  type="text" 
+                  name="username" 
+                  size="30" 
+                  maxlength="30" 
+                  placeholder="Enter your name..."
+                  required 
+                />
               </div>
-            </ul>
+              <div class="form-number-container">
+                <p>Phone Number: *</p>
+                <input 
+                  type="number" 
+                  name="username" 
+                  size="30" 
+                  maxlength="30" 
+                  placeholder="070 XXX XX XX"
+                  required
+                />
+              </div>
+              <div class="form-address-container">
+                <p>Address: *</p>
+                <input 
+                  type="text" 
+                  name="username" 
+                  size="30" 
+                  maxlength="60" 
+                  placeholder="Delivery address..."
+                  required 
+                />
+              </div>
+              <div class="form-date-container">
+                <p>Date of delivery: *</p>
+                <input 
+                  type="date" 
+                  name="username" 
+                  size="30" 
+                  maxlength="30" 
+                  required 
+                />
+              </div>
+              <div class="form-time-container">
+                <p>Time of delivery: *</p>
+                <input 
+                  type="time" 
+                  name="username" 
+                  size="30" 
+                  maxlength="30" 
+                  required 
+                />
+              </div>
+            </form>
           </div>
-          <img class="logo-image" src="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg" alt="">
-        </div>
-        
-        <div class="nav-links">
-          <img class="logo-image" src="./assets/icons/1486505264-food-fork-kitchen-knife-meanns-restaurant_81404.svg" alt="">
-          <a href="#home" rel="noopener noreferrer">Home</a>
-          <a href="#dishes" rel="noopener noreferrer">Dishes</a>
-          <a href="#aboutus" rel="noopener noreferrer">About</a>
-          <a href="#menu" rel="noopener noreferrer">Menu</a>
-          <a href="#review" rel="noopener noreferrer">Review</a>
-          <a href="#order" rel="noopener noreferrer">Order</a>
-          <a href="#recipe-search" rel="noopener noreferrer">Recipes</a>
-
-          <div class="nav-navlink-icons">
-            <img src="./assets/icons/2072119491582004497.svg" alt="seach">
-            <img src="./assets/icons/9468673611582004493.svg" alt="favourite">
-            <img src="./assets/icons/7524495561543238919.svg" alt="shopping basket">
+          <div class="form-container-center">
+            <form action="">
+              <div>
+                <p>Your Order: *</p>
+                <textarea 
+                  name="" 
+                  id="" 
+                  cols="30"   
+                  rows="8" 
+                  placeholder="Enter the name and number of portions."
+                >
+                </textarea>
+              </div>
+              <div>
+                <p>Additional Info:</p>
+                <textarea 
+                  name="" 
+                  id="" 
+                  cols="30" 
+                  rows="8" 
+                  placeholder="Any message for us or special requests..."
+                >
+                </textarea>
+              </div>
+              <button class="button form-button">Submit</button>  
+            </form>
           </div>
-
-        </div>
-      </nav>
-      <div class="hero-content fade-in">
-        <div class="hero-content-text">
-          <h4>Our Special Dishes</h4>
-          <h2>FRIED CHICKEN</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores provident quos nam eveniet laudantium soluta
-            cum, ratione sequi sint labore?</p>
-          <button>ORDER NOW</button>
-        </div>
-        <div>
-          <img class="hero-content-image" src="./assets/images/jimi-filipovski-0VRwj7rYnQI-unsplash.jpg" alt="plated food">
-        </div>
-      </div>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-      </button>
-    </section>
-
-    <section id="dishes" class="popular-dishes-container">
-      <h4>Our Dishes</h4>
-      <h2>POPULAR DISHES</h2>
-      <div id="popular-dishes" class="card-container-popular-dishes">
-          <!--CODE INJECTED FROM JAVASCRIPT, with the Popular Dishes Cards and images-->
-      </div>
-    </section>
-
-
-    <section id="aboutus" class="why-choose-us">
-      <h4>About Us</h4>
-      <h2>WHY CHOOSE US?</h2>
-      <div class="banner-container fade-in">
-        <div class="banner-image-container">
-          <div class="container">
-            <button class="hero-button" onclick="backward()">
-              <i class="fa fa-arrow-left" aria-hidden="true"></i>
-            </button>
-            <button class="hero-button" onclick="forward()">
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </button>
+          <div class="watch-container">
+            <div id="time"></div>
+            <div id="date"></div>
           </div>
         </div>
-        <div class="banner-text-container">
-          <h3>Best food in the country ...</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repudiandae et porro repellat autem quas vel
-            mollitia illo, est ex.</p>
-          <div class="button-container">
-            <button class="about-button">
-              <img class="icon-image" src="./assets/icons/delivery.svg" alt="delivery">
-              <p>Free Delivery</p>
-            </button>
-            <button class="about-button">
-              <img class="icon-image" src="./assets/icons/money.svg" alt="dollar">
-              <p>Easy Payment</p>
-            </button>
-            <button class="about-button">
-              <img class="icon-image" src="./assets/icons/service.svg" alt="customer care">
-              <p>24x7 Service</p>
-            </button>
-          </div>
-          <button class="learn-more-button">Learn More</button>
-        </div>
-      </div>
-      
-    </section>
-
-    <section id="menu" class="todays-special">
-      <h4>Our Menu</h4>
-      <h2>TODAYS SPECIAL</h2>
-      <div id="todays-special" class="cards-container-todays-special">
-        <!--CODE INJECTED FROM JAVASCRIPT, with the Todays Special Cards and images-->
-      </div>
-    </section>
-
-
-    <section id="review" class="customer-review">
-      <h4>Customer Reviews</h4>
-      <h2>WHAT THEY SAY ...</h2>
-      <div id="customer-reviews" class="review-card-container fade-in">
-        <!--CODE INJECTED FROM JAVASCRIPT, with the review Cards and images-->
-      </div>
-    </section>
-
-    <section id="order" class="order-form-container">
-      <h4>Order Now</h4>
-      <h2>FREE & FAST DELIVERY</h2>
-      <div class="order-form">
-        <div class="form-container-left">
-          <form action="">
-            <div class="form-name-container">
-              <p>Your Name: *</p>
-              <input 
-                type="text" 
-                name="username" 
-                size="30" 
-                maxlength="30" 
-                placeholder="Enter your name..."
-                required 
-              />
+        <p>All fields marked with * are mandatory</p>
+      </section>
+      <section id="recipe-search" class="recipe-search">
+        <h4>Dont feel like ordering</h4>
+        <h2>INSPIRATIONS AND RECIPES</h2>
+        <br/>
+        <h3 class="looking-h3">
+          Lets help you find a great recipe to cook...
+        </h3>
+        <div class="search-container">
+          <form class="filter-form" onsubmit="fetchEdamamData(event)">
+            <div class="main-ingredient-container">
+              <label for="ingredient">Search by Ingredient</label>
+              <input id="main-ingredient" type="text" required>
             </div>
-            <div class="form-number-container">
-              <p>Phone Number: *</p>
-              <input 
-                type="number" 
-                name="username" 
-                size="30" 
-                maxlength="30" 
-                placeholder="070 XXX XX XX"
-                required
-              />
+            <div class="number-of-recipes-container">
+              <label for="recipes" >Number of Recipes</label>
+              <input id="number-of-recipes" type="number" min="1" max="24" required>
             </div>
-            <div class="form-address-container">
-              <p>Address: *</p>
-              <input 
-                type="text" 
-                name="username" 
-                size="30" 
-                maxlength="60" 
-                placeholder="Delivery address..."
-                required 
-              />
-            </div>
-            <div class="form-date-container">
-              <p>Date of delivery: *</p>
-              <input 
-                type="date" 
-                name="username" 
-                size="30" 
-                maxlength="30" 
-                required 
-              />
-            </div>
-            <div class="form-time-container">
-              <p>Time of delivery: *</p>
-              <input 
-                type="time" 
-                name="username" 
-                size="30" 
-                maxlength="30" 
-                required 
-              />
-            </div>
+            <input id="submit" name="submit" type="submit" value="SEARCH">
           </form>
         </div>
-        <div class="form-container-center">
-          <form action="">
-            <div>
-              <p>Your Order: *</p>
-              <textarea 
-                name="" 
-                id="" 
-                cols="30"   
-                rows="8" 
-                placeholder="Enter the name and number of portions."
-              >
-              </textarea>
-            </div>
-            <div>
-              <p>Additional Info:</p>
-              <textarea 
-                name="" 
-                id="" 
-                cols="30" 
-                rows="8" 
-                placeholder="Any message for us or special requests..."
-              >
-              </textarea>
-            </div>
-            <button class="button form-button">Submit</button>
-            
-          </form>
+        <section class="recipe-list" id="recipeList">
+          <!--CODE INJECTED FROM JAVASCRIPT, with the fetched Recipes Cards and images-->
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="scrolling-text">
+        <p >We want you to feel </p>
+        <p>
+          <span class="word wisteria">satisfied.</span>
+          <span class="word belize">wonderful.</span>
+          <span class="word pomegranate">healthy.</span>
+          <span class="word green">beautiful.</span>
+          <span class="word midnight">great.</span>
+        </p>
+      </div>
+      <div class="footer-middle-container">
+        <div class="quick-link-container">
+          <h3>Quick Links</h3>
+          <div class="quick-links">
+            <a href="#home" rel="noopener noreferrer">Home</a>
+            <a href="#dishes" rel="noopener noreferrer">Dishes</a>
+            <a href="#aboutus" rel="noopener noreferrer">About</a>
+            <a href="#menu" rel="noopener noreferrer">Menu</a>
+            <a href="#review" rel="noopener noreferrer">Review</a>
+            <a href="#order" rel="noopener noreferrer">Order</a>
+            <a href="#recipe-search" rel="noopener noreferrer">Recipes</a>
+
+          </div>
         </div>
-        <div class="watch-container">
-          <div id="time"></div>
-          <div id="date"></div>
+        <div class="locations-container">
+          <h3>Locations</h3>
+          <div>
+            <p>Stockholm</p>
+            <p>Göteborg</p>
+            <p>Linköping</p>
+            <p>Malmö</p>
+          </div>
+        </div>
+        <div class="contact-info-container">
+          <h3>Contact Info</h3>
+          <div>
+            <p><img class="social-icon" src="./assets/icons/phone-call.png" alt="phone icon">+46 11231231431, +46 3243523423</p>
+            <p><img class="social-icon" src="./assets/icons/email.png" alt="email icon">john@doe.com, jane@doe.com</p>
+            <div>
+              <p><img class="social-icon" src="./assets/icons/home.png" alt="home icon">sadsdasds street</p>
+              <p>19454 city</p>
+              <p>sweden</p>
+            </div>
+          </div>
+        </div>
+        <div class="follow-us-container">
+          <h3>Follow Us</h3>
+          <div class="follow-us-links">
+            <a href="#">
+              <img class="social-icon" src="./assets/icons/facebook.png" alt="facebook icon">
+              Facebook
+            </a>
+            <a href="#">
+              <img class="social-icon" src="./assets/icons/twitter.png" alt="twitter icon">
+              Twitter
+            </a>
+            <a href="#">
+              <img class="social-icon" src="./assets/icons/instagram.png" alt="instagram icon">
+              Instagram
+            </a>
+            <a href="#">
+              <img class="social-icon" src="./assets/icons/linkedin.png" alt="linkedin icon">
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
-      <p>All fields marked with * are mandatory</p>
-    </section>
-    <section id="recipe-search" class="recipe-search">
-      <h4>Dont feel like ordering</h4>
-      <h2>INSPIRATIONS AND RECIPES</h2>
-      <br/>
-      <h3 class="looking-h3">
-        Lets help you find a great recipe to cook...
-      </h3>
-      <div class="search-container">
-        <form class="filter-form" onsubmit="fetchEdamamData(event)">
-          <div class="main-ingredient-container">
-            <label for="ingredient">Search by Ingredient</label>
-            <input id="main-ingredient" type="text" required>
-          </div>
-          <div class="number-of-recipes-container">
-            <label for="recipes" >Number of Recipes</label>
-            <input id="number-of-recipes" type="number" min="1" max="24" required>
-          </div>
-          <input id="submit" name="submit" type="submit" value="SEARCH">
+      <div class="sub-container">
+        <p class="sub-title">Subscribe to us for the latest and greatest</p>
+        <form class="sub-form" method="POST" action="https://api.slapform.com/_fa27c98F">
+          <p>Email : 
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Enter your email here" 
+              required
+            >
+          </p>
+          <button type="submit">Submit</button>
         </form>
       </div>
-      <section class="recipe-list" id="recipeList">
-        <!--CODE INJECTED FROM JAVASCRIPT, with the fetched Recipes Cards and images-->
-      </section>
-    </section>
-  </main>
-  <footer>
-    <div class="scrolling-text">
-      <p >We think you are </p>
-      <p>
-        <span class="word wisteria">satisfied.</span>
-        <span class="word belize">wonderful.</span>
-        <span class="word pomegranate">healthy.</span>
-        <span class="word green">beautiful.</span>
-        <span class="word midnight">great.</span>
-      </p>
-    </div>
-    <div class="footer-middle-container">
-      <div class="quick-link-container">
-        <h3>Quick Links</h3>
-        <div class="quick-links">
-          <a href="#home" rel="noopener noreferrer">Home</a>
-          <a href="#dishes" rel="noopener noreferrer">Dishes</a>
-          <a href="#aboutus" rel="noopener noreferrer">About</a>
-          <a href="#menu" rel="noopener noreferrer">Menu</a>
-          <a href="#review" rel="noopener noreferrer">Review</a>
-          <a href="#order" rel="noopener noreferrer">Order</a>
-          <a href="#recipe-search" rel="noopener noreferrer">Recipes</a>
+      <p class="footer-bottom-container"> <    Copyright Karan Mann as part of Hyper Island Project    / > </p>
+    </footer>
 
-        </div>
-      </div>
-      <div class="locations-container">
-        <h3>Locations</h3>
-        <div>
-          <p>Stockholm</p>
-          <p>Göteborg</p>
-          <p>Linköping</p>
-          <p>Malmö</p>
-        </div>
-      </div>
-      <div class="contact-info-container">
-        <h3>Contact Info</h3>
-        <div>
-          <p><img class="social-icon" src="./assets/icons/phone-call.png" alt="phone icon">+46 11231231431, +46 3243523423</p>
-          <p><img class="social-icon" src="./assets/icons/email.png" alt="email icon">john@doe.com, jane@doe.com</p>
-          <div>
-            <p><img class="social-icon" src="./assets/icons/home.png" alt="home icon">sadsdasds street</p>
-            <p>19454 city</p>
-            <p>sweden</p>
-          </div>
-        </div>
-      </div>
-      <div class="follow-us-container">
-        <h3>Follow Us</h3>
-        <div class="follow-us-links">
-          <a href="#">
-            <img class="social-icon" src="./assets/icons/facebook.png" alt="facebook icon">
-            Facebook
-          </a>
-          <a href="#">
-            <img class="social-icon" src="./assets/icons/twitter.png" alt="twitter icon">
-            Twitter
-          </a>
-          <a href="#">
-            <img class="social-icon" src="./assets/icons/instagram.png" alt="instagram icon">
-            Instagram
-          </a>
-          <a href="#">
-            <img class="social-icon" src="./assets/icons/linkedin.png" alt="linkedin icon">
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="sub-container">
-      <p class="sub-title">Subscribe to us for the latest and greatest</p>
-      <form class="sub-form" method="POST" action="https://api.slapform.com/_fa27c98F">
-        <p>Email : 
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Enter your email here" 
-            required
-          >
-        </p>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-    <p class="footer-bottom-container"> <    Copyright Karan Mann as part of Hyper Island Project    / > </p>
-  </footer>
-  <script src="./scripts/clock.js"></script>
-  <script src="./scripts/edamam.js"></script>
-  <script src="./scripts/cardsFetch.js"></script>
-  <script src="./scripts/intersectionalObserver.js"></script>
-  <script src="./scripts/slideShow.js"></script>
-  <script src="./scripts/scrollToTop.js"></script>
-  <script src="./scripts/scrollingText.js"></script>
+    <script src="./scripts/clock.js"></script>
+    <script src="./scripts/edamam.js"></script>
+    <script src="./scripts/cardsFetch.js"></script>
+    <script src="./scripts/intersectionalObserver.js"></script>
+    <script src="./scripts/slideShow.js"></script>
+    <script src="./scripts/scrollToTop.js"></script>
+    <script src="./scripts/scrollingText.js"></script>
+    <script src="https://use.fontawesome.com/092820c411.js"></script>
 
-</body>
-
+  </body>
 </html>

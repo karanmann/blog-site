@@ -2,12 +2,19 @@ const popularDishes = document.getElementById("popular-dishes")
 const todaysSpecial = document.getElementById("todays-special")
 const customerReviews = document.getElementById("customer-reviews")
 
-// const randomPriceGenerator = Math.floor(Math.random() * 200) 
-//Generates a random number betweeon 0 & 200
-// substitute the line with <p>Kr. ${dishData.price}</p> to get data from fetch
+const fetchCardsData = () => {
+  fetch ('../data/localData.json')
+    .then( res => res.json())
+    .then( json => {
+      buildPopularDishesCards(json);
+      buildTodaysSpecialCards(json);
+      buildReviewCards(json);
+    })
+    .catch(error => console.log(error, "There has been an error"))
+}
 
 const buildPopularDishesCards = (json) => {
-  let output = ""
+  let output = "";
   json.popular_dishes.map((dishData) => {
     output += `
         <figure class="popular-card">
@@ -27,11 +34,11 @@ const buildPopularDishesCards = (json) => {
         </figure>   
               `;
     popularDishes.innerHTML = output;
-  })
-}
+  });
+};
 
 const buildTodaysSpecialCards = (json) => {
-  let output = ""
+  let output = "";
   json.todays_special.map((dishData) => {
     output += `
         <div class="card-todays-special">
@@ -51,11 +58,11 @@ const buildTodaysSpecialCards = (json) => {
           </div>
         </div>`
     todaysSpecial.innerHTML = output;
-  })
-}
+  });
+};
 
 const buildReviewCards = (json) => {
-  let output = ""
+  let output = "";
   json.customer_reviews.map( reviewData => {
     output += `
         <div class="review-card">
@@ -74,21 +81,7 @@ const buildReviewCards = (json) => {
           
         </div>`;
     customerReviews.innerHTML = output;
-  })
-}
+  });
+};
 
-const fetchCardsData = () => {
-  fetch ('../data/localData.json')
-    .then( res => res.json())
-    .then( json => {
-
-      buildPopularDishesCards(json);
-      buildTodaysSpecialCards(json);
-      buildReviewCards(json);
-
-    })
-    .catch(error => console.log(error, "There has been an error"))
-}
-
-
-fetchCardsData()
+fetchCardsData();

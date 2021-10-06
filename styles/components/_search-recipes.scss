@@ -21,10 +21,11 @@
         }
       }
     }
-      #submit {
-        margin-top: 20px;
-        @extend .button
-      }
+
+    #submit {
+      margin-top: 20px;
+      @extend .button
+    }
   }
 }
 
@@ -56,15 +57,17 @@
       border-radius: 50%;
       margin: 20px 0;
     }
+
     .card-yield {
       
     }
+
     .card-healthiness {
       text-align: center;
     }
+
     .card-button-container {
       
-
       .card-button {
         @extend .button;
         text-decoration: none;

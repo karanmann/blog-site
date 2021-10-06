@@ -1,14 +1,15 @@
 .why-choose-us {
   @extend .flex-center-column;
+  @extend .paralax-effect;
   align-items: center;
   background-color: $background-white;
   background-image: url(../../assets/images/nwAlHa.jpeg);
   background-repeat: repeat;
-  @extend .paralax-effect;
 
   .banner-container {
     @extend .flex-center-column;
     align-items: center;
+
     @media (min-width: $mediaDesktopMin) {
       flex-direction: row;
       justify-content: space-evenly;
@@ -47,19 +48,24 @@
         }
       }
     }
+
     .banner-text-container {
       @extend .flex-center-column;
       width: 80%;
       margin: 5% 0;
+      
       @media (min-width: $mediaDesktopMin) {
         width: 45%;
       }
+
       .button-container {
         @extend .flex-center-column;
         justify-content: space-evenly;
+        
         @media (min-width: $mediaDesktopMin) {
           flex-direction: row;
         }
+
         .about-button {
           @extend .flex-center-row;
           @extend .button;
@@ -67,6 +73,7 @@
           font-size: 11px;
           width: 160px;
           gap: 10px;
+
           .icon-image {
             height:30px;
             width:30px;

@@ -1,8 +1,8 @@
-function toggleState(){
+const toggleState = () => {
   document.querySelector(".toggle-me").classList.toggle("active");
 };
 
-function toggleBackground(){
+const toggleBackground = () =>{
   document.querySelector(".blog-title").classList.toggle("mystyle");
 };
 
@@ -20,7 +20,7 @@ const updateTime = () => {
   let time = `${HH}:${MM}:${SS}`;
   document.querySelector('#time').innerText = time;
   setTimeout(updateTime, 1000);
-}
+};
 
 const updateDate = () => {
   var fullDate = new Date();
@@ -44,7 +44,7 @@ const updateDate = () => {
   var date = fullDate.getDate();
   let today = `${month} ${date},${year}`;
   document.querySelector('#date').innerText = today;
-}
+};
 
 updateTime();
 updateDate();
