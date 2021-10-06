@@ -15,9 +15,13 @@
   margin: 0;
   
     .word {
-    position: absolute;
-    width: 220px;
-    opacity: 0;
+      position: absolute;
+      width: 100px;
+      opacity: 0;
+      
+      @media (min-width: $mediaTabletMin) {
+        width:200px;
+      }
     } 
   }
 }

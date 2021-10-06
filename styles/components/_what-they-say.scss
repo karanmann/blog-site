@@ -2,6 +2,7 @@
   @extend .flex-center-column;
   background-color: $background-white;
   background-image: url(../../assets/images/kite.jpeg);
+  background-size: cover; 
   @extend .paralax-effect;
   
   .review-card-container {
@@ -14,6 +15,7 @@
     }
 
     @media (min-width: $mediaDesktopMin) {
+
     }
     
     .review-card {

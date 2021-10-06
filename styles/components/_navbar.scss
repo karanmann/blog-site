@@ -3,12 +3,13 @@
 nav {
 	height: 100px;
 	width: 100%;
-	transform: translate(0px, 10px);
+	transform: translate(0px, 20px);
   @extend .paralax-effect;
 
 	.nav-links {
 		@extend .flex-center-row;
 		justify-content: space-around;
+		align-items: center;
 		position: relative;
 		bottom: 10px;
 

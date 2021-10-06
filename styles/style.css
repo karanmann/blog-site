@@ -98,13 +98,16 @@ footer .footer-middle-container .contact-info-container div p, footer .footer-mi
 nav {
   height: 100px;
   width: 100%;
-  -webkit-transform: translate(0px, 10px);
-          transform: translate(0px, 10px);
+  -webkit-transform: translate(0px, 20px);
+          transform: translate(0px, 20px);
 }
 
 nav .nav-links {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   bottom: 10px;
 }
@@ -348,7 +351,11 @@ nav .logo-image:hover {
 }
 
 .hero-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(../../assets/images/wheat-1845835_1920.jpg);
+  background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -657,7 +664,7 @@ nav .logo-image:hover {
           align-items: center;
   background-color: whitesmoke;
   background-image: url(../../assets/images/nwAlHa.jpeg);
-  background-repeat: repeat;
+  background-size: cover;
 }
 
 .why-choose-us .banner-container {
@@ -870,6 +877,7 @@ nav .logo-image:hover {
 .customer-review {
   background-color: whitesmoke;
   background-image: url(../../assets/images/kite.jpeg);
+  background-size: cover;
 }
 
 .customer-review .review-card-container {
@@ -1154,8 +1162,14 @@ nav .logo-image:hover {
 
 .scrolling-text p .word {
   position: absolute;
-  width: 220px;
+  width: 100px;
   opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .scrolling-text p .word {
+    width: 200px;
+  }
 }
 
 .letter {

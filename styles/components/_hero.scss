@@ -1,7 +1,9 @@
 .hero-container { 
   @extend .flex-center-column;
+  align-items: center;
   @extend .paralax-effect;
   background-image: url(../../assets/images/wheat-1845835_1920.jpg);
+  background-size: cover; 
   justify-content: center;
   height: 80vh;
   
