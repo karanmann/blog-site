@@ -1,18 +1,21 @@
 .scrolling-text {
-  font-size: 24px;
+  font-size: 20px;
+  position: absolute;
   text-align: center;
   transform: translatex(-30%);
   line-break: auto;
   margin: 20px 0px;
-  transform: translate(-18%, 10%);
+  transform: translate(7%, -250%);
+  z-index:0;
+  
 
   @media (min-width: $mediaTabletMin) {
     font-size: 30px;
-    transform: translate(-16%, 0%);
+    transform: translate(45%, -300%);
   }
 
-  @media (min-width: $mediaTabletMin) {
-    transform: translate(-18%, 0%);
+  @media (min-width: $mediaDesktopMin) {
+    transform: translate(25%, -250%);
   }
 
   p {
@@ -22,12 +25,11 @@
   
     .word {
       position: absolute;
-      width: 100%;
+      width: 100px;
       opacity: 0;
       overflow: hidden;
       font-weight: 900;
       flex-wrap: wrap;
-      
       @media (min-width: $mediaTabletMin) {
         width:200px;
       }
@@ -41,6 +43,7 @@
   float: left;
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
+  
 }
 
 .letter.out {

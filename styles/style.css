@@ -102,8 +102,8 @@ footer .footer-middle-container .contact-info-container div p, footer .footer-mi
 nav {
   height: 100px;
   width: 100%;
-  -webkit-transform: translate(0px, 20px);
-          transform: translate(0px, 20px);
+  -webkit-transform: translate(0px, 20px, 26px);
+          transform: translate(0px, 20px, 26px);
 }
 
 nav .nav-links {
@@ -214,7 +214,6 @@ nav .hamburger .menu-toggle {
   position: relative;
   top: 25px;
   left: 20px;
-  z-index: 10;
 }
 
 nav .hamburger .menu-toggle a {
@@ -301,7 +300,6 @@ nav .hamburger .menu {
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /*tostopflickeringoftextinsafari*/
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
   -webkit-transform: translate(-100%, 0);
@@ -399,65 +397,6 @@ nav .logo-image:hover {
   display: inline-block;
   vertical-align: top;
   margin: 0;
-}
-
-.hero-container .hero-content .hero-content-text .word {
-  position: absolute;
-  width: 220px;
-  opacity: 0;
-}
-
-.hero-container .hero-content .hero-content-text .letter {
-  display: inline-block;
-  position: relative;
-  float: left;
-  -webkit-transform: translateZ(25px);
-          transform: translateZ(25px);
-  -webkit-transform-origin: 50% 50% 25px;
-          transform-origin: 50% 50% 25px;
-}
-
-.hero-container .hero-content .hero-content-text .letter.out {
-  -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg);
-  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.hero-container .hero-content .hero-content-text .letter.behind {
-  -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
-}
-
-.hero-container .hero-content .hero-content-text .letter.in {
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
-  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.hero-container .hero-content .hero-content-text .wisteria {
-  color: #8e44ad;
-}
-
-.hero-container .hero-content .hero-content-text .belize {
-  color: #2980b9;
-}
-
-.hero-container .hero-content .hero-content-text .pomegranate {
-  color: #c0392b;
-}
-
-.hero-container .hero-content .hero-content-text .green {
-  color: #16a085;
-}
-
-.hero-container .hero-content .hero-content-text .midnight {
-  color: #2c3e50;
 }
 
 @media (min-width: 1260px) {
@@ -812,7 +751,7 @@ nav .logo-image:hover {
           justify-content: center;
   -webkit-box-shadow: 0px 0px 6px 2px #4F4F4F;
           box-shadow: 0px 0px 6px 2px #4F4F4F;
-  width: 100%;
+  width: 70%;
   height: 50%;
   background-color: white;
   margin: 5%;
@@ -923,7 +862,7 @@ nav .logo-image:hover {
   background-color: whitesmoke;
   -webkit-box-shadow: 0px 0px 6px 2px #4F4F4F;
           box-shadow: 0px 0px 6px 2px #4F4F4F;
-  width: 90%;
+  width: 70%;
   height: 300px;
   border-radius: 5px;
   margin: 20px;
@@ -954,6 +893,7 @@ nav .logo-image:hover {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    height: 350px;
   }
 }
 
@@ -1167,28 +1107,30 @@ nav .logo-image:hover {
 }
 
 .scrolling-text {
-  font-size: 24px;
+  font-size: 20px;
+  position: absolute;
   text-align: center;
   -webkit-transform: translatex(-30%);
           transform: translatex(-30%);
   line-break: auto;
   margin: 20px 0px;
-  -webkit-transform: translate(-18%, 10%);
-          transform: translate(-18%, 10%);
+  -webkit-transform: translate(7%, -250%);
+          transform: translate(7%, -250%);
+  z-index: 0;
 }
 
 @media (min-width: 768px) {
   .scrolling-text {
     font-size: 30px;
-    -webkit-transform: translate(-16%, 0%);
-            transform: translate(-16%, 0%);
+    -webkit-transform: translate(45%, -300%);
+            transform: translate(45%, -300%);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1260px) {
   .scrolling-text {
-    -webkit-transform: translate(-18%, 0%);
-            transform: translate(-18%, 0%);
+    -webkit-transform: translate(25%, -250%);
+            transform: translate(25%, -250%);
   }
 }
 
@@ -1200,7 +1142,7 @@ nav .logo-image:hover {
 
 .scrolling-text p .word {
   position: absolute;
-  width: 100%;
+  width: 100px;
   opacity: 0;
   overflow: hidden;
   font-weight: 900;

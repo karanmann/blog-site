@@ -3,7 +3,7 @@
 nav {
 	height: 100px;
 	width: 100%;
-	transform: translate(0px, 20px);
+	transform: translate(0px, 20px, 26px);
   @extend .paralax-effect;
 
 	.nav-links {
@@ -94,7 +94,6 @@ nav {
 			position: relative;
 			top: 25px;
 			left: 20px;
-			z-index: 10;
 
 			a {
 				text-decoration: none;
@@ -170,7 +169,6 @@ nav {
 			background: #ededed;
 			list-style-type: none;
 			-webkit-font-smoothing: antialiased;
-			/*tostopflickeringoftextinsafari*/
 			transform-origin: 0% 0%;
 			transform: translate(-100%, 0);
 			transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
