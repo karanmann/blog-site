@@ -31,7 +31,10 @@ body {
   h4 {
     font-size: 40px;
   }
-
+	header{
+		position: relative;
+		z-index: 100;
+	}
   main  {
 
     section {

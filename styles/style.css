@@ -100,10 +100,9 @@ footer .footer-middle-container .contact-info-container div p, footer .footer-mi
 }
 
 nav {
-  height: 100px;
+  height: 70px;
   width: 100%;
-  -webkit-transform: translate(0px, 20px, 26px);
-          transform: translate(0px, 20px, 26px);
+  padding: 10px 5px 5px 5px;
 }
 
 nav .nav-links {
@@ -1160,8 +1159,6 @@ nav .logo-image:hover {
   display: inline-block;
   position: relative;
   float: left;
-  -webkit-transform: translateZ(25px);
-          transform: translateZ(25px);
   -webkit-transform-origin: 50% 50% 25px;
           transform-origin: 50% 50% 25px;
 }
@@ -1353,6 +1350,11 @@ html body {
 
 html h4 {
   font-size: 40px;
+}
+
+html header {
+  position: relative;
+  z-index: 100;
 }
 
 html main section {

@@ -1,9 +1,10 @@
 //NAVBAR
 
 nav {
-	height: 100px;
+	height: 70px;
 	width: 100%;
-	transform: translate(0px, 20px, 26px);
+	padding: 10px 5px 5px 5px;
+	// transform: translate(0px, 20px, 26px);
   @extend .paralax-effect;
 
 	.nav-links {
